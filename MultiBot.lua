@@ -11,13 +11,13 @@ local tLeft = tMultiBar.addFrame("Left", -76, 2, 32)
 
 MultiBot.tips.tanker = {}
 MultiBot.tips.tanker.master = 
-"Tank-Attack\n|cffffffff"..
-"With this Button the Tanks starting to attack your target.\n"..
-"The Execution-Order shows the Receiver for Commandos.|r\n\n"..
-"|cffff0000Left-Click to execute Tank-Attack|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r";
+"坦克攻击\n|cffffffff"..
+"按此按钮坦克开始攻击你的目标.\n"..
+"执行命令时显示命令的接收者。|r\n\n"..
+"|cffff0000左键点击执行 坦克攻击|r\n"..
+"|cff999999(执行命令: 团队, 小队)|r";
 
-tLeft.addButton("Tanker", -238, 0, "ability_warrior_shieldbash", MultiBot.tips.tanker.master)
+tLeft.addButton("坦克", -238, 0, "ability_warrior_shieldbash", MultiBot.tips.tanker.master)
 .doLeft = function(pButton)
 	if(MultiBot.isTarget()) then MultiBot.ActionToGroup("@tank do attack my target") end
 end
@@ -26,62 +26,64 @@ end
 
 MultiBot.tips.attack = {}
 MultiBot.tips.attack.master = 
-"Attack-Control\n|cffffffff"..
-"With this Control you can give the Command to attack.\n"..
-"Right-Click the Options to define a new default Action.\n"..
-"The Execution-Order shows the Receiver for Commandos.|r\n\n"..
-"|cffff0000Left-Click to execute the default Action|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r\n\n"..
-"|cffff0000Right-Click to show or hide the Options|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"攻击控制\n|cffffffff".. 
+"使用此控制，您可以发出攻击命令。\n".. 
+"右键点击选项来定义新的默认动作。\n".. 
+"执行命令时显示命令的接收者。|r\n\n".. 
+"|cffff0000左键点击执行默认动作|r\n".. 
+"|cff999999(执行命令: 团队, 队伍)|r\n\n".. 
+"|cffff0000右键点击显示或隐藏选项|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.attack.attack = 
-"Attack\n|cffffffff"..
-"With this Command the hole Raid or Party starting to attack your target.|r\n\n"..
-"|cffff0000Left-Click to execute Attack|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r\n\n"..
-"|cffff0000Right-Click to define as default Action|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"攻击\n|cffffffff".. 
+"使用此命令，整个团队或小队将开始攻击你的目标。|r\n\n".. 
+"|cffff0000左键点击执行攻击|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r\n\n".. 
+"|cffff0000右键点击设为默认动作|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.attack.ranged = 
-"Ranged-Attack\n|cffffffff"..
-"With this Command the Ranged-Fighters starting to attack your target.|r\n\n"..
-"|cffff0000Left-Click to execute Ranged-Attack|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r\n\n"..
-"|cffff0000Right-Click to define as default Action|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"远程攻击\n|cffffffff".. 
+"使用此命令，远程攻击者将开始攻击你的目标。|r\n\n".. 
+"|cffff0000左键点击执行远程攻击|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r\n\n".. 
+"|cffff0000右键点击设为默认动作|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.attack.melee = 
-"Ranged-Attack\n|cffffffff"..
-"With this Command the Melee-Fighters starting to attack your target.|r\n\n"..
-"|cffff0000Left-Click to execute Melee-Attack|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r\n\n"..
-"|cffff0000Right-Click to define as default Action|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"近战攻击\n|cffffffff".. 
+"使用此命令，近战攻击者将开始攻击你的目标。|r\n\n".. 
+"|cffff0000左键点击执行近战攻击|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r\n\n".. 
+"|cffff0000右键点击设为默认动作|r\n".. 
+"|cff999999(执行命令: 系统)|r";
+
 
 MultiBot.tips.attack.healer = 
-"Healer-Attack\n|cffffffff"..
-"With this Command the Healers starting to attack your target.|r\n\n"..
-"|cffff0000Left-Click to execute Healer-Attack|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r\n\n"..
-"|cffff0000Right-Click to define as default Action|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"治疗攻击\n|cffffffff".. 
+"使用此命令，治疗者将开始攻击你的目标。|r\n\n".. 
+"|cffff0000左键点击执行治疗攻击|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r\n\n".. 
+"|cffff0000右键点击设为默认动作|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.attack.dps = 
-"DPS-Attack\n|cffffffff"..
-"With this Command the DPS starting to attack your target.|r\n\n"..
-"|cffff0000Left-Click to execute DPS-Attack|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r\n\n"..
-"|cffff0000Right-Click to define as default Action|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"DPS攻击\n|cffffffff".. 
+"使用此命令，DPS将开始攻击你的目标。|r\n\n".. 
+"|cffff0000左键点击执行DPS攻击|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r\n\n".. 
+"|cffff0000右键点击设为默认动作|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.attack.tank = 
-"Tank-Attack\n|cffffffff"..
-"With this Command the Tanks starting to attack your target.|r\n\n"..
-"|cffff0000Left-Click to execute Tank-Attack|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r\n\n"..
-"|cffff0000Right-Click to define as default Action|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"坦克攻击\n|cffffffff".. 
+"使用此命令，坦克将开始攻击你的目标。|r\n\n".. 
+"|cffff0000左键点击执行坦克攻击|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r\n\n".. 
+"|cffff0000右键点击设为默认动作|r\n".. 
+"|cff999999(执行命令: 系统)|r";
+
 
 local tButton = tLeft.addButton("Attack", -204, 0, "Interface\\AddOns\\MultiBot\\Icons\\attack.blp", MultiBot.tips.attack.master)
 tButton.doRight = function(pButton)
@@ -146,28 +148,29 @@ end
 
 MultiBot.tips.mode = {}
 MultiBot.tips.mode.master = 
-"Mode-Control\n|cffffffff"..
-"This Control allows you to switch a Combat-Mode on and off.\n"..
-"Left-Click the Options to select another Combat-Mode.\n"..
-"The Execution-Order shows the Receiver for Commandos.|r\n\n"..
-"|cffff0000Left-Click to switch the Combat-Mode|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r\n\n"..
-"|cffff0000Right-Click to show or hide Options|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"模式控制\n|cffffffff".. 
+"此控制允许你开启或关闭战斗模式。\n".. 
+"左键点击选项可选择另一种战斗模式。\n".. 
+"执行命令时显示命令的接收者。|r\n\n".. 
+"|cffff0000左键点击切换战斗模式|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r\n\n".. 
+"|cffff0000右键点击显示或隐藏选项|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.mode.passive = 
-"Passive-Mode\n|cffffffff"..
-"In the Passive-Mode, your Bots wont attack any Opponent.\n"..
-"This Mode is useful to keep the Tank from running into the Opponents during a pull.|r\n\n"..
-"|cffff0000Left-Click to selet and activate Passive-Mode|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r";
+"被动模式\n|cffffffff".. 
+"在被动模式下，你的机器人不会攻击任何对手。\n".. 
+"此模式在拉怪时防止坦克冲向敌人时非常有用。|r\n\n".. 
+"|cffff0000左键点击选择并激活被动模式|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r";
 
 MultiBot.tips.mode.grind = 
-"Grind-Mode\n|cffffffff"..
-"In the Grind-Mode, your Bots attack each Opponent at random.\n"..
-"This Mode is usefull if you under attack of to much Opponents.|r\n\n"..
-"|cffff0000Left-Click to selet and activate Grind-Mode|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r";
+"打怪模式\n|cffffffff".. 
+"在打怪模式下，你的机器人会随机攻击每个对手。\n".. 
+"当你遭遇过多敌人攻击时，此模式非常有用。|r\n\n".. 
+"|cffff0000左键点击选择并激活打怪模式|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r";
+
 
 local tButton = tLeft.addButton("Mode", -170, 0, "Interface\\AddOns\\MultiBot\\Icons\\mode_passive.blp", MultiBot.tips.mode.master).setDisable()
 tButton.doRight = function(pButton)
@@ -217,18 +220,19 @@ end
 
 MultiBot.tips.stallow = {}
 MultiBot.tips.stallow.stay = 
-"Stay|Follow\n|cffffffff"..
-"With this Button you can give right now the Command to Stay.\n"..
-"The Execution-Order shows the Receiver for Commandos.|r\n\n"..
-"|cffff0000Left-Click to execute Stay|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r";
+"停留|跟随\n|cffffffff".. 
+"使用此按钮，你可以立即发出停留命令。\n".. 
+"执行命令时显示命令的接收者。|r\n\n".. 
+"|cffff0000左键点击执行停留|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r";
 
 MultiBot.tips.stallow.follow = 
-"Stay|Follow\n|cffffffff"..
-"With this Button you can give right now the Command to Follow.\n"..
-"The Execution-Order shows the Receiver for Commandos.|r\n\n"..
-"|cffff0000Left-Click to execute Follow|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r";
+"停留|跟随\n|cffffffff".. 
+"使用此按钮，你可以立即发出跟随命令。\n".. 
+"执行命令时显示命令的接收者。|r\n\n".. 
+"|cffff0000左键点击执行跟随|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r";
+
 
 tLeft.addButton("Stay", -136, 0, "Interface\\AddOns\\MultiBot\\Icons\\command_follow.blp", MultiBot.tips.stallow.stay)
 .doLeft = function(pButton)
@@ -250,70 +254,71 @@ end
 
 MultiBot.tips.flee = {}
 MultiBot.tips.flee.master = 
-"Flee-Control\n|cffffffff"..
-"With this Control you can give the Command to flee.\n"..
-"Right-Click the Options to define a new default Action.\n"..
-"The Execution-Order shows the Receiver for Commandos.|r\n\n"..
-"|cffff0000Left-Click to execute the default Action|r\n"..
-"|cff999999(Execution-Order: 'Target', Raid, Party)|r\n\n"..
-"|cffff0000Right-Click to show or hide the Options|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"逃跑控制\n|cffffffff".. 
+"使用此控制，你可以发出逃跑命令。\n".. 
+"右键点击选项以定义新的默认动作。\n".. 
+"执行命令时显示命令的接收者。|r\n\n".. 
+"|cffff0000左键点击执行默认动作|r\n".. 
+"|cff999999(执行命令: '目标', 团队, 小队)|r\n\n".. 
+"|cffff0000右键点击显示或隐藏选项|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.flee.flee = 
-"Flee\n|cffffffff"..
-"With this Command the hole Raid or Party starting to flee.|r\n\n"..
-"|cffff0000Left-Click to execute Flee|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r\n\n"..
-"|cffff0000Right-Click to define as default Action|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"逃跑\n|cffffffff".. 
+"使用此命令，整个团队或小队将开始逃跑。|r\n\n".. 
+"|cffff0000左键点击执行逃跑|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r\n\n".. 
+"|cffff0000右键点击设为默认动作|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.flee.ranged = 
-"Ranged-Flee\n|cffffffff"..
-"With this Command the Ranged-Fighters starting to flee.|r\n\n"..
-"|cffff0000Left-Click to execute Ranged-Flee|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r\n\n"..
-"|cffff0000Right-Click to define as default Action|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"远程逃跑\n|cffffffff".. 
+"使用此命令，远程战斗者将开始逃跑。|r\n\n".. 
+"|cffff0000左键点击执行远程逃跑|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r\n\n".. 
+"|cffff0000右键点击设为默认动作|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.flee.melee = 
-"Melee-Flee\n|cffffffff"..
-"With this Command the Melee-Fighters starting to flee.|r\n\n"..
-"|cffff0000Left-Click to execute Melee-Flee|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r\n\n"..
-"|cffff0000Right-Click to define as default Action|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"近战逃跑\n|cffffffff".. 
+"使用此命令，近战战斗者将开始逃跑。|r\n\n".. 
+"|cffff0000左键点击执行近战逃跑|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r\n\n".. 
+"|cffff0000右键点击设为默认动作|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.flee.healer = 
-"Healer-Flee\n|cffffffff"..
-"With this Command the Healers starting to flee.|r\n\n"..
-"|cffff0000Left-Click to execute Healer-Flee|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r\n\n"..
-"|cffff0000Right-Click to define as default Action|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"治疗逃跑\n|cffffffff".. 
+"使用此命令，治疗者将开始逃跑。|r\n\n".. 
+"|cffff0000左键点击执行治疗逃跑|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r\n\n".. 
+"|cffff0000右键点击设为默认动作|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.flee.dps = 
-"DPS-Flee\n|cffffffff"..
-"With this Command the DPS starting to flee.|r\n\n"..
-"|cffff0000Left-Click to execute DPS-Flee|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r\n\n"..
-"|cffff0000Right-Click to define as default Action|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"DPS逃跑\n|cffffffff".. 
+"使用此命令，DPS将开始逃跑。|r\n\n".. 
+"|cffff0000左键点击执行DPS逃跑|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r\n\n".. 
+"|cffff0000右键点击设为默认动作|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.flee.tank = 
-"Tank-Flee\n|cffffffff"..
-"With this Command the Tanks starting to flee.|r\n\n"..
-"|cffff0000Left-Click to execute Tank-Flee|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r\n\n"..
-"|cffff0000Right-Click to define as default Action|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"坦克逃跑\n|cffffffff".. 
+"使用此命令，坦克将开始逃跑。|r\n\n".. 
+"|cffff0000左键点击执行坦克逃跑|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r\n\n".. 
+"|cffff0000右键点击设为默认动作|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.flee.target = 
-"Target-Flee\n|cffffffff"..
-"With this Command the Target starting to flee.|r\n\n"..
-"|cffff0000Left-Click to execute Target-Flee|r\n"..
-"|cff999999(Execution-Order: Target)|r\n\n"..
-"|cffff0000Right-Click to define as default Action|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"目标逃跑\n|cffffffff".. 
+"使用此命令，目标将开始逃跑。|r\n\n".. 
+"|cffff0000左键点击执行目标逃跑|r\n".. 
+"|cff999999(执行命令: 目标)|r\n\n".. 
+"|cffff0000右键点击设为默认动作|r\n".. 
+"|cff999999(执行命令: 系统)|r";
+
 
 local tButton = tLeft.addButton("Flee", -102, 0, "Interface\\AddOns\\MultiBot\\Icons\\flee.blp", MultiBot.tips.flee.master)
 tButton.doRight = function(pButton)
@@ -386,74 +391,74 @@ end
 
 MultiBot.tips.format = {}
 MultiBot.tips.format.master = 
-"Formation-Control\n|cffffffff"..
-"This Control allows you to change the Formation of your Bots.\n"..
-"The Execution-Order shows the Receiver for Commandos.|r\n\n"..
-"|cffff0000Left-Click to show or hide the Options|r\n"..
-"|cff999999(Execution-Order: System)|r\n\n"..
-"|cffff0000Right-Click to ask for the current Formation|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r";
+"阵型控制\n|cffffffff".. 
+"此控制允许你改变机器人阵型。\n".. 
+"执行命令时显示命令的接收者。|r\n\n".. 
+"|cffff0000左键点击显示或隐藏选项|r\n".. 
+"|cff999999(执行命令: 系统)|r\n\n".. 
+"|cffff0000右键点击询问当前阵型|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r";
 
 MultiBot.tips.format.arrow = 
-"Arrow-Formation\n|cffffffff"..
-"The Bots line up in an arrow formation.\n"..
-"The Bots line of sight is in your direction.\n\n"..
-"1. Line are Tanks\n"..
-"2. Line are Melee-Fighters\n"..
-"3. Line are Ranged-Fighters\n"..
-"4. Line are Healers|r\n\n"..
-"|cffff0000Left-Click to select the Arrow-Formation|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r";
+"箭头阵型\n|cffffffff".. 
+"机器人排列成箭头阵型。\n".. 
+"机器人的视线方向朝向你。\n\n".. 
+"1. 前排为坦克\n".. 
+"2. 第二排为近战战斗者\n".. 
+"3. 第三排为远程战斗者\n".. 
+"4. 最后一排为治疗者|r\n\n".. 
+"|cffff0000左键点击选择箭头阵型|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r";
 
 MultiBot.tips.format.queue = 
-"Queue-Formation\n|cffffffff"..
-"The Bots line up in an defensive formation.\n"..
-"The Bots line of sight is in your direction.|r\n\n"..
-"|cffff0000Left-Click to select the Queue-Formation|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r";
+"队列阵型\n|cffffffff".. 
+"机器人排列成防御阵型。\n".. 
+"机器人的视线方向朝向你。|r\n\n".. 
+"|cffff0000左键点击选择队列阵型|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r";
 
 MultiBot.tips.format.near = 
-"Near-Formation\n|cffffffff"..
-"The Bots line up near by.\n"..
-"The Bots line of sight is in your direction.|r\n\n"..
-"|cffff0000Left-Click to select the Near-Formation|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r";
+"近距离阵型\n|cffffffff".. 
+"机器人在你附近排列。\n".. 
+"机器人的视线方向朝向你。|r\n\n".. 
+"|cffff0000左键点击选择近距离阵型|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r";
 
 MultiBot.tips.format.melee = 
-"Near-Formation\n|cffffffff"..
-"The Bots line up for melee fights.\n"..
-"The Bots line of sight is in your direction.|r\n\n"..
-"|cffff0000Left-Click to select the Melee-Formation|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r";
+"近战阵型\n|cffffffff".. 
+"机器人为近战战斗排列。\n".. 
+"机器人的视线方向朝向你。|r\n\n".. 
+"|cffff0000左键点击选择近战阵型|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r";
 
 MultiBot.tips.format.line = 
-"Near-Formation\n|cffffffff"..
-"The Bots line up on the left and right side in a parallel line.\n"..
-"The Bots line of sight is in your direction.|r\n\n"..
-"|cffff0000Left-Click to select the Line-Formation|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r";
+"直线阵型\n|cffffffff".. 
+"机器人在左侧和右侧排列成平行的直线。\n".. 
+"机器人的视线方向朝向你。|r\n\n".. 
+"|cffff0000左键点击选择直线阵型|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r";
 
 MultiBot.tips.format.circle = 
-"Circle-Formation\n|cffffffff"..
-"The Bots line up in a circle around you.\n"..
-"The Bots line of sight is directed outwards.|r\n\n"..
-"|cffff0000Left-Click to select the Circle-Formation|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r";
+"圆形阵型\n|cffffffff".. 
+"机器人围绕你排列成圆形。\n".. 
+"机器人的视线朝向外部。|r\n\n".. 
+"|cffff0000左键点击选择圆形阵型|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r";
 
 MultiBot.tips.format.chaos = 
-"Chaos-Formation\n|cffffffff"..
-"Each Bot follows you by its own.\n"..
-"They line up everywhere they wont.\n"..
-"The line of sight could be every direction.|r\n\n"..
-"|cffff0000Left-Click to select the Chaos-Formation|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r";
+"混乱阵型\n|cffffffff".. 
+"每个机器人各自跟随你。\n".. 
+"他们会随意排列，视线可以朝向任意方向。|r\n\n".. 
+"|cffff0000左键点击选择混乱阵型|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r";
 
 MultiBot.tips.format.shield = 
-"Shield-Formation\n|cffffffff"..
-"The Bots line up in the front, on the left and right side.\n"..
-"The Bots line of sight is in your direction.|r\n\n"..
-"|cffff0000Left-Click to select the Shield-Formation|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r";
+"盾牌阵型\n|cffffffff".. 
+"机器人在前方、左侧和右侧排列。\n".. 
+"机器人的视线方向朝向你。|r\n\n".. 
+"|cffff0000左键点击选择盾牌阵型|r\n".. 
+"|cff999999(执行命令: 团队, 小队)|r";
+
 
 local tButton = tLeft.addButton("Format", -68, 0, "Interface\\AddOns\\MultiBot\\Icons\\formation_near.blp", MultiBot.tips.format.master)
 tButton.doRight = function(pButton)
@@ -510,44 +515,45 @@ end
 
 MultiBot.tips.beast = {}
 MultiBot.tips.beast.master = 
-"Beastmaster-Control\n|cffffffff"..
-"This Control is for the Mod-Beastmaster of the Azerothcore.\n"..
-"Mod-Beastmaster allows every Character to have a Pet like Hunters.\n"..
-"Your Charaters can learn the nessasary Spells from White Fang.\n"..
-"White Fang must be placed into the World by the GameMaster.\n"..
-"The Execution-Order shows the Receiver for Commandos.|r\n\n"..
-"|cffff0000Left-Click to show or hide the Options|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"兽王控制\n|cffffffff".. 
+"此控制用于 Azerothcore 的 Mod-兽王。\n".. 
+"Mod-兽王允许每个角色像猎人一样拥有宠物。\n".. 
+"你的角色可以从白牙那里学习必要的法术。\n".. 
+"白牙必须由游戏管理员放置在世界中。\n".. 
+"执行命令时显示命令的接收者。|r\n\n".. 
+"|cffff0000左键点击显示或隐藏选项|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.beast.release =
-"Release the Beast\n|cffffffff"..
-"This Command will release the Beast.|r\n\n"..
-"|cffff0000Left-Click to release the Beast|r\n"..
-"|cff999999(Execution-Order: Target, Raid, Party)|r";
+"释放野兽\n|cffffffff".. 
+"此命令将释放野兽。|r\n\n".. 
+"|cffff0000左键点击释放野兽|r\n".. 
+"|cff999999(执行命令: 目标, 团队, 小队)|r";
 
 MultiBot.tips.beast.revive =
-"Revive the Beast\n|cffffffff"..
-"This Command will revive the Beast.|r\n\n"..
-"|cffff0000Left-Click to revive the Beast|r\n"..
-"|cff999999(Execution-Order: Target, Raid, Party)|r";
+"复活野兽\n|cffffffff".. 
+"此命令将复活野兽。|r\n\n".. 
+"|cffff0000左键点击复活野兽|r\n".. 
+"|cff999999(执行命令: 目标, 团队, 小队)|r";
 
 MultiBot.tips.beast.heal =
-"Heal the Beast\n|cffffffff"..
-"This Command will heal the Beast.|r\n\n"..
-"|cffff0000Left-Click to heal the Beast|r\n"..
-"|cff999999(Execution-Order: Target, Raid, Party)|r";
+"治疗野兽\n|cffffffff".. 
+"此命令将治疗野兽。|r\n\n".. 
+"|cffff0000左键点击治疗野兽|r\n".. 
+"|cff999999(执行命令: 目标, 团队, 小队)|r";
 
 MultiBot.tips.beast.feed =
-"Feed the Beast\n|cffffffff"..
-"This Command will feed the Beast.|r\n\n"..
-"|cffff0000Left-Click to feed the Beast|r\n"..
-"|cff999999(Execution-Order: Target, Raid, Party)|r";
+"喂养野兽\n|cffffffff".. 
+"此命令将喂养野兽。|r\n\n".. 
+"|cffff0000左键点击喂养野兽|r\n".. 
+"|cff999999(执行命令: 目标, 团队, 小队)|r";
 
 MultiBot.tips.beast.call =
-"Call the Beast\n|cffffffff"..
-"This Command will call the Beast.|r\n\n"..
-"|cffff0000Left-Click to call the Beast|r\n"..
-"|cff999999(Execution-Order: Target, Raid, Party)|r";
+"召唤野兽\n|cffffffff".. 
+"此命令将召唤野兽。|r\n\n".. 
+"|cffff0000左键点击召唤野兽|r\n".. 
+"|cff999999(执行命令: 目标, 团队, 小队)|r";
+
 
 tLeft.addButton("Beast", -34, 0, "ability_mount_swiftredwindrider", MultiBot.tips.beast.master)
 .doLeft = function(pButton)
@@ -586,91 +592,91 @@ end
 
 MultiBot.tips.creator = {}
 MultiBot.tips.creator.master = 
-"Creator-Control\n|cffffffff"..
-"With this Control you can create Random-Bots by Class.\n"..
-"The default Limit is 40 Random-Bots per Account.\n"..
-"There is no command to delete them after use.\n"..
-"So invite them to your Friendlist for reuse.\n"..
-"The Execution-Order shows the Receiver for Commandos.|r\n\n"..
-"|cffff0000Left-Click to show or hide the Options|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"创造者控制\n|cffffffff".. 
+"使用此控制，你可以按职业创建随机机器人。\n".. 
+"默认限制是每个账号最多40个随机机器人。\n".. 
+"没有命令可以在使用后删除它们。\n".. 
+"所以将它们添加到你的好友列表中以便重用。\n".. 
+"执行命令时显示命令的接收者。|r\n\n".. 
+"|cffff0000左键点击显示或隐藏选项|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.creator.warrior =
-"Create-Warrior\n|cffffffff"..
-"This Button will create a Random-Bot as Warrior.|r\n\n"..
-"|cffff0000Left-Click to create Warrior|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"创建战士\n|cffffffff".. 
+"此按钮将创建一个作为战士的随机机器人。|r\n\n".. 
+"|cffff0000左键点击创建战士|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.creator.warlock =
-"Create-Warlock\n|cffffffff"..
-"This Button will create a Random-Bot as Warlock.|r\n\n"..
-"|cffff0000Left-Click to create Warlock|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"创建术士\n|cffffffff".. 
+"此按钮将创建一个作为术士的随机机器人。|r\n\n".. 
+"|cffff0000左键点击创建术士|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.creator.shaman =
-"Create-Shaman\n|cffffffff"..
-"This Button will create a Random-Bot as Shaman.|r\n\n"..
-"|cffff0000Left-Click to create Shaman|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"创建萨满\n|cffffffff".. 
+"此按钮将创建一个作为萨满的随机机器人。|r\n\n".. 
+"|cffff0000左键点击创建萨满|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.creator.rogue =
-"Create-Rogue\n|cffffffff"..
-"This Button will create a Random-Bot as Rogue.|r\n\n"..
-"|cffff0000Left-Click to create Rogue|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"创建潜行者\n|cffffffff".. 
+"此按钮将创建一个作为潜行者的随机机器人。|r\n\n".. 
+"|cffff0000左键点击创建潜行者|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.creator.priest =
-"Create-Priest\n|cffffffff"..
-"This Button will create a Random-Bot as Priest.|r\n\n"..
-"|cffff0000Left-Click to create Priest|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"创建牧师\n|cffffffff".. 
+"此按钮将创建一个作为牧师的随机机器人。|r\n\n".. 
+"|cffff0000左键点击创建牧师|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.creator.paladin =
-"Create-Paladin\n|cffffffff"..
-"This Button will create a Random-Bot as Paladin.|r\n\n"..
-"|cffff0000Left-Click to create Paladin|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"创建圣骑士\n|cffffffff".. 
+"此按钮将创建一个作为圣骑士的随机机器人。|r\n\n".. 
+"|cffff0000左键点击创建圣骑士|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.creator.mage =
-"Create-Mage\n|cffffffff"..
-"This Button will create a Random-Bot as Mage.|r\n\n"..
-"|cffff0000Left-Click to create Mage|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"创建法师\n|cffffffff".. 
+"此按钮将创建一个作为法师的随机机器人。|r\n\n".. 
+"|cffff0000左键点击创建法师|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.creator.hunter =
-"Create-Hunter\n|cffffffff"..
-"This Button will create a Random-Bot as Hunter.|r\n\n"..
-"|cffff0000Left-Click to create Hunter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"创建猎人\n|cffffffff".. 
+"此按钮将创建一个作为猎人的随机机器人。|r\n\n".. 
+"|cffff0000左键点击创建猎人|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.creator.druid =
-"Create-Druid\n|cffffffff"..
-"This Button will create a Random-Bot as Druid.|r\n\n"..
-"|cffff0000Left-Click to create Druid|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"创建德鲁伊\n|cffffffff".. 
+"此按钮将创建一个作为德鲁伊的随机机器人。|r\n\n".. 
+"|cffff0000左键点击创建德鲁伊|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.creator.deathknight =
-"Create-DeathKnight\n|cffffffff"..
-"This Button will create a Random-Bot as DeathKnight.|r\n\n"..
-"|cffff0000Left-Click to create DeathKnight|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"创建死亡骑士\n|cffffffff".. 
+"此按钮将创建一个作为死亡骑士的随机机器人。|r\n\n".. 
+"|cffff0000左键点击创建死亡骑士|r\n".. 
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.creator.inspect =
-"Inspect-Target\n|cffffffff"..
-"This Button will open the Inspect-Window of your Target.|r\n\n"..
-"|cffff0000Left-Click to open Inspect-Window|r\n"..
-"|cff999999(Execution-Order: Target)|r";
+"检查目标\n|cffffffff"..
+"此按钮将打开目标的检查窗口。|r\n\n"..
+"|cffff0000左键点击打开检查窗口|r\n"..
+"|cff999999(执行命令：目标)|r";
 
 MultiBot.tips.creator.init =
-"Auto-Initialize\n|cffffffff"..
-"Use this Button to Auto-Initialize your Target, Raid or Party.\n"..
-"There are 2 Limitations, because the Equipment will be overwritten:\n"..
-"- it wont work with anyone on the Playerbot-Roster.\n"..
-"- it wont work with anyone on the Guild-Roster.|r\n\n"..
-"|cffff0000Left-Click to Auto-Initialize your Target|r\n"..
-"|cff999999(Execution-Order: Target)|r\n\n"..
-"|cffff0000Right-Click to Auto-Initialize your Group|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r";
+"自动初始化\n|cffffffff"..
+"使用此按钮自动初始化你的目标、团队或小队。\n"..
+"由于装备将被覆盖，因此有两个限制：\n"..
+"- 它不适用于玩家机器人名单中的任何人。\n"..
+"- 它不适用于公会名单中的任何人。|r\n\n"..
+"|cffff0000左键点击自动初始化|r\n"..
+"|cff999999(执行命令：目标)|r\n\n"..
+"|cffff0000右键点击自动初始化你的队伍|r\n"..
+"|cff999999(执行命令：团队、小队)|r";
 
 tLeft.addButton("Creator", -0, 0, "inv_helmet_145a", MultiBot.tips.creator.master)
 .doLeft = function(pButton)
@@ -778,14 +784,14 @@ end
 
 MultiBot.tips.units = {}
 MultiBot.tips.units.master =
-"Unit-Control\n|cffffffff"..
-"In this Control you will find the Playerbots.\n"..
-"Each Button stands for one of your Characters, Guild-Members or Friends.\n"..
-"The Execution-Order shows the Receiver for Commandos.|r\n\n"..
-"|cffff0000Left-Click to show or hide the Units|r\n"..
-"|cff999999(Execution-Order: System)|r\n\n"..
-"|cffff0000Right-Click to refresh the Roster|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"单位控制\n|cffffffff"..
+"在这个控制中，你会找到你的玩家机器人。\n"..
+"每个按钮代表你的一个角色、公会成员或好友。\n"..
+"执行命令时显示命令的接收者。|r\n\n"..
+"|cffff0000左键单击显示或隐藏单位|r\n"..
+"|cff999999(执行命令: 系统)|r\n\n"..
+"|cffff0000右击刷新名单|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 local tButton = tMultiBar.addButton("Units", -38, 0, "inv_scroll_04", MultiBot.tips.units.master)
 tButton.roster = "players"
@@ -942,79 +948,94 @@ tControl:Show()
 
 -- UNIT:FILTER --
 
+-- 所有职业筛选器的提示信息
+
 MultiBot.tips.units.filter =
-"Class-Filter\n|cffffffff"..
-"With the Class-Filter you can filter the Units by Classes.|r\n\n"..
-"|cffff0000Left-Click to show or hide the Options|r\n"..
-"|cff999999(Execution-Order: System)|r\n\n"..
-"|cffff0000Right-Click to reset the Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+  "职业筛选器\n|cffffffff"..
+  "通过职业筛选器你可以根据职业来过滤单位。|r\n\n"..
+  "|cffff0000左键单击显示或隐藏选项|r\n"..
+  "|cff999999(执行命令: 系统)|r\n\n"..
+  "|cffff0000右键单击重置筛选器|r\n"..
+  "|cff999999(执行命令: 系统)|r";
 
+-- 死亡骑士筛选器
 MultiBot.tips.units.deathknight =
-"Class-Filter\n|cffffffff"..
-"Filters the Units for Death Knights.|r\n\n"..
-"|cffff0000Left-Click to filter for Death Knights|r\n"..
-"|cff999999(Execution-Order: System)|r";
+  "职业筛选器\n|cffffffff"..
+  "将单位筛选为死亡骑士。|r\n\n"..
+  "|cffff0000左键单击筛选死亡骑士|r\n"..
+  "|cff999999(执行命令: 系统)|r";
 
+-- 德鲁伊筛选器
 MultiBot.tips.units.druid =
-"Class-Filter\n|cffffffff"..
-"Filters the Units for Druids.|r\n\n"..
-"|cffff0000Left-Click to filter for Druids|r\n"..
-"|cff999999(Execution-Order: System)|r";
+  "职业筛选器\n|cffffffff"..
+  "将单位筛选为德鲁伊。|r\n\n"..
+  "|cffff0000左键单击筛选德鲁伊|r\n"..
+  "|cff999999(执行命令: 系统)|r";
 
+-- 猎人筛选器
 MultiBot.tips.units.hunter =
-"Class-Filter\n|cffffffff"..
-"Filters the Units for Hunters.|r\n\n"..
-"|cffff0000Left-Click to filter for Hunters|r\n"..
-"|cff999999(Execution-Order: System)|r";
+  "职业筛选器\n|cffffffff"..
+  "将单位筛选为猎人。|r\n\n"..
+  "|cffff0000左键单击筛选猎人|r\n"..
+  "|cff999999(执行命令: 系统)|r";
 
+-- ... 其他职业筛选器（法师、战士、牧师等） ...
+
+-- 法师筛选器
 MultiBot.tips.units.mage =
-"Class-Filter\n|cffffffff"..
-"Filters the Units for Mages.|r\n\n"..
-"|cffff0000Left-Click to filter for Mages|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"职业筛选器\n|cffffffff"..
+"将单位筛选为法师。|r\n\n"..
+"|cffff0000左键单击筛选法师|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 圣骑士筛选器
 MultiBot.tips.units.paladin =
-"Class-Filter\n|cffffffff"..
-"Filters the Units for Paladins.|r\n\n"..
-"|cffff0000Left-Click to filter for Paladins|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"职业筛选器\n|cffffffff"..
+"将单位筛选为圣骑士。|r\n\n"..
+"|cffff0000左键单击筛选圣骑士|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 牧师筛选器
 MultiBot.tips.units.priest =
-"Class-Filter\n|cffffffff"..
-"Filters the Units for Priests.|r\n\n"..
-"|cffff0000Left-Click to filter for Priests|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"职业筛选器\n|cffffffff"..
+"将单位筛选为牧师。|r\n\n"..
+"|cffff0000左键单击筛选牧师|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 盗贼筛选器
 MultiBot.tips.units.rogue =
-"Class-Filter\n|cffffffff"..
-"Filters the Units for Rogues.|r\n\n"..
-"|cffff0000Left-Click to filter for Rogues|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"职业筛选器\n|cffffffff"..
+"将单位筛选为盗贼。|r\n\n"..
+"|cffff0000左键单击筛选盗贼|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 萨满祭司筛选器
 MultiBot.tips.units.shaman =
-"Class-Filter\n|cffffffff"..
-"Filters the Units for Shamans.|r\n\n"..
-"|cffff0000Left-Click to filter for Shamans|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"职业筛选器\n|cffffffff"..
+"将单位筛选为萨满祭司。|r\n\n"..
+"|cffff0000左键单击筛选萨满祭司|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 术士筛选器
 MultiBot.tips.units.warlock =
-"Class-Filter\n|cffffffff"..
-"Filters the Units for Warlocks.|r\n\n"..
-"|cffff0000Left-Click to filter for Warlocks|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"职业筛选器\n|cffffffff"..
+"将单位筛选为术士。|r\n\n"..
+"|cffff0000左键单击筛选术士|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 战士筛选器
 MultiBot.tips.units.warrior =
-"Class-Filter\n|cffffffff"..
-"Filters the Units for Warriors.|r\n\n"..
-"|cffff0000Left-Click to filter for Warriors|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"职业筛选器\n|cffffffff"..
+"将单位筛选为战士。|r\n\n"..
+"|cffff0000左键单击筛选战士|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 无筛选器
 MultiBot.tips.units.none =
-"Class-Filter\n|cffffffff"..
-"Removes the Class-Filter from the Units.|r\n\n"..
-"|cffff0000Left-Click to remove the Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"职业筛选器\n|cffffffff"..
+"移除单位的职业筛选器。|r\n\n"..
+"|cffff0000左键单击移除筛选器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 local tButton = tControl.addButton("Filter", 0, 0, "Interface\\AddOns\\MultiBot\\Icons\\filter_none.blp", MultiBot.tips.units.filter)
 tButton.doRight = function(pButton)
@@ -1108,40 +1129,45 @@ end
 
 -- UNITS:ROSTER --
 
+-- 团队筛选器
 MultiBot.tips.units.roster =
-"Roster-Filter\n|cffffffff"..
-"With the Roster-Filter you can switch between differned Rosters.|r\n\n"..
-"|cffff0000Left-Click to show or hide the Options|r\n"..
-"|cff999999(Execution-Order: System)|r\n\n"..
-"|cffff0000Right-Click to reset the Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"团队筛选器\n|cffffffff"..
+"通过团队筛选器，你可以切换不同的团队。|r\n\n"..
+"|cffff0000左键单击显示或隐藏选项|r\n"..
+"|cff999999(执行命令: 系统)|r\n\n"..
+"|cffff0000右键单击重置筛选器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 活动团队
 MultiBot.tips.units.actives =
-"Roster-Filter\n|cffffffff"..
-"Shows the Active-Roster.|r\n\n"..
-"|cffff0000Left-Click to select Active-Roster|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"团队筛选器\n|cffffffff"..
+"显示活动团队。|r\n\n"..
+"|cffff0000左键单击选择活动团队|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 玩家机器人团队
 MultiBot.tips.units.players =
-"Roster-Filter\n|cffffffff"..
-"Shows the Playerbot-Roster.\n"..
-"Normaly your Characters and Others which stayed in your Group.|r\n\n"..
-"|cffff0000Left-Click to select Playerbot-Roster|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"团队筛选器\n|cffffffff"..
+"显示玩家机器人团队。\n"..
+"通常是你的角色和其他留在队伍中的人。|r\n\n"..
+"|cffff0000左键单击选择玩家机器人团队|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 公会团队
 MultiBot.tips.units.members =
-"Roster-Filter\n|cffffffff"..
-"Shows the Guild-Roster.\n"..
-"The Guild-Roster does not show your Characters.|r\n\n"..
-"|cffff0000Left-Click to select Guild-Roster|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"团队筛选器\n|cffffffff"..
+"显示公会团队。\n"..
+"公会团队不会显示你的角色。|r\n\n"..
+"|cffff0000左键单击选择公会团队|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 好友团队
 MultiBot.tips.units.friends =
-"Roster-Filter\n|cffffffff"..
-"Shows the Friend-Roster.\n"..
-"The Friend-Roster does not show your Characters or Guild-Members.|r\n\n"..
-"|cffff0000Left-Click to select Friend-Roster|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"团队筛选器\n|cffffffff"..
+"显示好友团队。\n"..
+"好友团队不会显示你的角色或公会成员。|r\n\n"..
+"|cffff0000左键单击选择好友团队|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 local tButton = tControl.addButton("Roster", 0, 30, "Interface\\AddOns\\MultiBot\\Icons\\roster_players.blp", MultiBot.tips.units.roster)
 tButton.doRight = function(pButton)
@@ -1194,54 +1220,60 @@ end
 
 -- UNIT:BROWSE --
 
+-- 浏览团队
 MultiBot.tips.units.browse =
-"Browse\n|cffffffff"..
-"With this Button you can browse through the Rosters.\n"..
-"It will be hidden if the Roster has less then 10 Units.|r\n\n"..
-"|cffff0000Left-Click to browse the Roster|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"浏览团队\n|cffffffff"..
+"使用此按钮可以浏览团队列表。\n"..
+"如果团队单位少于 10 个，则此按钮将隐藏。|r\n\n"..
+"|cffff0000左键单击浏览团队|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 邀请控制
 MultiBot.tips.units.invite =
-"Invite-Control\n|cffffffff"..
-"With this Control you can automaticaly fill up your Group.\n"..
-"The left Button is for 'Party-Invite', the right Buttons are for 'Raid-Invite'.\n"..
-"Additionally a Right-Click on this Button will remove all Bots at once.|r\n\n".. 
-"|cffff0000Left-Click to show or hide the Control|r\n"..
-"|cff999999(Execution-Order: System)|r\n\n"..
-"|cffff0000Right-Click to remove all Bots|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"邀请控制\n|cffffffff"..
+"使用此控制可以自动填充你的队伍。\n"..
+"左侧按钮用于 '组队邀请'，右侧按钮用于 '团队邀请'。\n"..
+"此外，右键点击此按钮将一次性移除所有机器人。|r\n\n".. 
+"|cffff0000左键单击显示或隐藏控制|r\n"..
+"|cff999999(执行命令: 系统)|r\n\n"..
+"|cffff0000右键点击移除所有机器人|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 邀请五人组
 MultiBot.tips.units.inviteParty5 =
-"Party of Five\n|cffffffff"..
-"With this Button you can fill up your Party.\n"..
-"This Feature takes the Units form the selected Roster ignoring the Class-Filter.\n"..
-"It stops at the End of the Roster or until the Group reached 5 Members.|r\n\n"..
-"|cffff0000Left-Click to invite Party-Members|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"五人组\n|cffffffff"..
+"使用此按钮可以填充你的队伍。\n"..
+"此功能会从选定的团队列表中获取单位，忽略职业筛选器。\n"..
+"它会在团队列表结束处或队伍达到 5 名成员时停止。|r\n\n"..
+"|cffff0000左键单击邀请组队成员|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 邀请十人团队
 MultiBot.tips.units.inviteRaid10 =
-"Raid of Ten\n|cffffffff"..
-"With this Button you can fill up your Raid.\n"..
-"This Feature takes the Units form the selected Roster ignoring the Class-Filter.\n"..
-"It stops at the End of the Roster or until the Group reached 10 Members.|r\n\n"..
-"|cffff0000Left-Click to invite Raid-Members|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"十人团队\n|cffffffff"..
+"使用此按钮可以填充你的团队。\n"..
+"此功能会从选定的团队列表中获取单位，忽略职业筛选器。\n"..
+"它会在团队列表结束处或队伍达到 10 名成员时停止。|r\n\n"..
+"|cffff0000左键单击邀请团队成员|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 邀请二十五人团队
 MultiBot.tips.units.inviteRaid25 =
-"Raid of Twenty-Five\n|cffffffff"..
-"With this Button you can fill up your Raid.\n"..
-"This Feature takes the Units form the selected Roster ignoring the Class-Filter.\n"..
-"It stops at the End of the Roster or until the Group reached 25 Members.|r\n\n"..
-"|cffff0000Left-Click to invite Raid-Members|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"二十五人团队\n|cffffffff"..
+"使用此按钮可以填充你的团队。\n"..
+"此功能会从选定的团队列表中获取单位，忽略职业筛选器。\n"..
+"它会在团队列表结束处或队伍达到 25 名成员时停止。|r\n\n"..
+"|cffff0000左键单击邀请团队成员|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 邀请四十人团队
 MultiBot.tips.units.inviteRaid40 =
-"Raid of Forty\n|cffffffff"..
-"With this Button you can fill up your Raid.\n"..
-"This Feature takes the Units form the selected Roster ignoring the Class-Filter.\n"..
-"It stops at the End of the Roster or until the Group reached 40 Members.|r\n\n"..
-"|cffff0000Left-Click to invite Raid-Members|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"四十人团队\n|cffffffff"..
+"使用此按钮可以填充你的团队。\n"..
+"此功能会从选定的团队列表中获取单位，忽略职业筛选器。\n"..
+"它会在团队列表结束处或队伍达到 40 名成员时停止。|r\n\n"..
+"|cffff0000左键单击邀请团队成员|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 local tButton = tControl.addButton("Invite", 0, 60, "Interface\\AddOns\\MultiBot\\Icons\\invite.blp", MultiBot.tips.units.invite).setEnable()
 tButton.doRight = function(pButton)
@@ -1356,71 +1388,74 @@ end
 
 -- MAIN --
 
+-- 主控制面板
 MultiBot.tips.main = {}
 MultiBot.tips.main.master =
-"Main-Control\n|cffffffff"..
-"In this Control you will find the Auto-Switches, Special-Strategies and Reset-Commands.\n"..
-"The Execution-Order shows the Receiver for Commandos.|r\n\n"..
-"|cffff0000Left-Click to show or hide the Options|r\n"..
-"|cff999999(Execution-Order: System)|r\n\n"..
-"|cffff0000Right-Click to close MultiBot|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"主控制面板\n|cffffffff"..
+"此控制面板包含自动切换、特殊策略和重置命令。\n"..
+"执行命令时会显示命令的接收者。|r\n\n"..
+"|cffff0000左键单击显示或隐藏选项|r\n"..
+"|cff999999(执行命令: 系统)|r\n\n"..
+"|cffff0000右键单击关闭 MultiBot|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 重置坐标
 MultiBot.tips.main.coords =
-"Reset-Coords\n|cffffffff"..
-"Reset the Coordinates of the Features:\n"..
-"MultiBar, Inventory, Spellbook, Itemus, Iconos and Reward-Selector|r\n\n"..
-"|cffff0000Left-Click to reset Coordinates|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"重置坐标\n|cffffffff"..
+"重置以下功能的坐标：\n"..
+"多功能栏、背包、技能书、物品栏、图标和奖励选择器|r\n\n"..
+"|cffff0000左键单击重置坐标|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 自动释放
 MultiBot.tips.main.release =
-"Auto-Release\n|cffffffff"..
-"This Feature detects the Death of Bots.\n"..
-"Dead Bots are automatically released and summoned.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Auto-Release|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"自动释放\n|cffffffff"..
+"此功能可以检测机器人的死亡。\n"..
+"死亡的机器人将自动释放并召唤。|r\n\n"..
+"|cffff0000左键单击启用或禁用自动释放|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 自动属性
 MultiBot.tips.main.stats =
-"Auto-Stats\n|cffffffff"..
-"This Feature visualizes the Stats.\n"..
-"The Stats are updated every minute.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Auto-Stats|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"自动属性\n|cffffffff"..
+"此功能可视化属性数据。\n"..
+"属性数据每分钟更新一次。|r\n\n"..
+"|cffff0000左键单击启用或禁用自动属性|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.main.reward =
-"Reward-Selector\n|cffffffff"..
-"This Feature visualizes the Selection of Rewards.\n"..
-"My Advice is to select the Reward for your Character first.\n"..
-"Then you wont have any Problems using the Inspect-Buttons.\n"..
-"Currently are max 12 Bots supported.|r\n\n"..
-"Important:\n"..
-"Once your Character has completed the Quest, the Bots must also complete the Quest.\n"..
-"So dont cancel the Reward-Selector after your Character has his Reward.\n\n"..
-"|cffffffffMod-Playerbot-Configuration:\n"..
-"- (must) AiPlayerbot.AutoPickReward = no\n"..
-"- (recommanded) AiPlayerbot.SyncQuestWithPlayer = 1|r\n\n"..
-"|cffff0000Left-Click to enable or disable Reward-Selector|r\n"..
-"|cff999999(Execution-Order: System)|r\n\n"..
-"|cffff0000Right-Click to open Reward-Selector|r\n"..
-"|cff999999(Execution-Order: System)|r";
-
+"奖励选择器\n|cffffffff"..
+"此功能可视化奖励的选择。\n"..
+"我的建议是先为你的角色选择奖励。\n"..
+"这样在使用检查按钮时就不会有任何问题。\n"..
+"目前最多支持 12 个机器人。|r\n\n"..
+"重要提示：\n"..
+"一旦你的角色完成了任务，机器人也必须完成任务。\n"..
+"所以在你的角色获得奖励后，不要取消奖励选择器。\n\n"..
+"|cffffffff玩家机器人配置：\n"..
+"- (必须) AiPlayerbot.AutoPickReward = no\n"..
+"- (推荐) AiPlayerbot.SyncQuestWithPlayer = 1|r\n\n"..
+"|cffff0000左键点击以启用或禁用奖励选择器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 MultiBot.tips.main.naxx =
-"Naxx-Strategies\n|cffffffff"..
-"This Button will activate the Naxx-Strategies of your Bots.|r\n\n"..
-"|cffff0000Left-Click to activate Naxx-Strategies|r\n"..
-"|cff999999(Execution-Order: Target, Raid, Party)|r";
+"纳克萨玛斯策略\n|cffffffff"..
+"此按钮将激活你机器人的纳克萨玛斯策略。|r\n\n"..
+"|cffff0000左键单击激活纳克萨玛斯策略|r\n"..
+"|cff999999(执行命令: 目标、团队、队伍)|r";
 
+-- 重置机器人
 MultiBot.tips.main.reset =
-"Reset-Bots\n|cffffffff"..
-"This Button will reset the Artificial-Intelligence of your Bots.|r\n\n"..
-"|cffff0000Left-Click to reset the Artificial-Intelligence|r\n"..
-"|cff999999(Execution-Order: Target, Raid, Party)|r";
+"重置机器人\n|cffffffff"..
+"此按钮将重置你机器人的人工智能。|r\n\n"..
+"|cffff0000左键单击重置人工智能|r\n"..
+"|cff999999(执行命令: 目标、团队、队伍)|r";
 
+-- 重置动作
 MultiBot.tips.main.action =
-"Reset-Action\n|cffffffff"..
-"This Button will reset the current Action of your Bots.\n\n"..
-"|cffff0000Left-Click to reset the Action|r\n"..
-"|cff999999(Execution-Order: Target, Raid, Party)|r";
+"重置动作\n|cffffffff"..
+"此按钮将重置你机器人的当前动作。|r\n\n"..
+"|cffff0000左键单击重置动作|r\n"..
+"|cff999999(执行命令: 目标、团队、队伍)|r";
 
 local tButton = tMultiBar.addButton("Main", 0, 0, "inv_gizmo_02", MultiBot.tips.main.master)
 tButton.doRight = function(pButton)
@@ -1490,72 +1525,79 @@ end
 
 -- MASTERS --
 
+-- 游戏管理员控制面板
 MultiBot.tips.game = {}
 MultiBot.tips.game.master =
-"GameMaster-Control\n|cffffffff"..
-"In this Control you will find useful GameMaster-Commands.\n"..
-"The Execution-Order shows the Receiver for Commandos.|r\n\n"..
-"|cffff0000Left-Click to show or hide the Options|r\n"..
-"|cff999999(Execution-Order: System)|r\n\n"..
-"|cffff0000Right-Click to drag and move MultiBot|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"游戏管理员控制面板\n|cffffffff"..
+"此控制面板包含一些实用的游戏管理员命令。\n"..
+"执行命令时显示命令的接收者。|r\n\n"..
+"|cffff0000左键单击显示或隐藏选项|r\n"..
+"|cff999999(执行命令: 系统)|r\n\n"..
+"|cffff0000右键单击拖动和移动 MultiBot|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 亡灵帝国
 MultiBot.tips.game.necronet =
-"Necro-Network\n|cffffffff"..
-"This Button enables or disables the Necro-Network.\n"..
-"If Necro-Network is active you will find Graveyard-Buttons on the World-Map.\n"..
-"With each Graveyard-Button you could Teleport yourself to the corresponding Graveyard.\n"..
-"You need GameMaster-Rights zo use these Buttons.|r\n\n"..
-"|cffff0000Left-Click to enable or disable the Necro-Network|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"亡灵帝国\n|cffffffff"..
+"此按钮启用或禁用亡灵帝国。\n"..
+"如果亡灵帝国络处于激活状态，你将在世界地图上找到墓地按钮。\n"..
+"每个墓地按钮都可以让你传送至对应的墓地。\n"..
+"您需要游戏管理员权限才能使用这些按钮。|r\n\n"..
+"|cffff0000左键单击启用或禁用亡灵帝国|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 记忆传送门
 MultiBot.tips.game.portal =
-"Memory-Portal\n|cffffffff"..
-"In this Box you will find the Memory-Gems.\n"..
-"Use the Memory-Gems to store your current Location.\n"..
-"You can teleport yourself to stored Locations by using the Memory-Gems.\n"..
-"The Execution-Order shows the Receiver for Commandos.|r\n\n"..
-"|cffff0000Left-Click to show or hide the Soulgems|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"记忆传送门\n|cffffffff"..
+"此框中包含记忆宝石。\n"..
+"使用记忆宝石储存你的当前位置。\n"..
+"你可以通过使用记忆宝石传送到储存的位置。\n"..
+"执行命令时显示命令的接收者。|r\n\n"..
+"|cffff0000左键单击显示或隐藏灵魂宝石|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 记忆宝石
 MultiBot.tips.game.memory =
-"Memory-Gem\n|cffffffff"..
-"This Memory-Gem ABOUT.\n"..
-"You need GameMaster-Rights to use this Button.|r\n\n"..
-"|cffff0000Left-Click to store or teleport to the Location|r\n"..
-"|cff999999(Execution-Order: Target)|r\n\n"..
-"|cffff0000Right-Click to forget the Location|r\n"..
-"|cff999999(Execution-Order: Target)|r";
+"记忆宝石\n|cffffffff"..
+"关于记忆宝石。\n"..
+"您需要游戏管理员权限才能使用此按钮。|r\n\n"..
+"|cffff0000左键单击存储或传送到该位置|r\n"..
+"|cff999999(执行命令: 目标)|r\n\n"..
+"|cffff0000右键单击忘记该位置|r\n"..
+"|cff999999(执行命令: 目标)|r";
 
+-- 物品生成器
 MultiBot.tips.game.itemus = 
-"Itemus\n|cffffffff"..
-"You will find every Item in the Box of the GamerMaster.\n"..
-"Just target the Player or Bot, left click the Item and the wish come true.\n"..
-"Important, not every Item can be generated, so you must try to find out.\n"..
-"The Execution-Order shows the Receiver for Commandos.|r\n\n"..
-"|cffff0000Left-Click to open or close the Itemus|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"物品生成器\n|cffffffff"..
+"游戏管理员工具箱中包含所有物品。\n"..
+"只需选择玩家或机器人，然后左键单击物品，愿望即可成真。\n"..
+"重要提示，并非所有物品都可以生成，因此您需要尝试找出可生成的物品。|r\n\n"..
+"|cffff0000左键单击打开或关闭物品生成器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 图标生成器
 MultiBot.tips.game.iconos = 
-"Iconos\n|cffffffff"..
-"You will find every Icon and his Path in this Tool.\n"..
-"The Execution-Order shows the Receiver for Commandos.|r\n\n"..
-"|cffff0000Left-Click to open or close the Itemus|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"图标生成器\n|cffffffff"..
+"此工具中包含所有图标及其路径。\n"..
+"执行命令时显示命令的接收者。|r\n\n"..
+"|cffff0000左键单击打开或关闭图标生成器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
+-- 召唤
 MultiBot.tips.game.summon =
-"Summon\n|cffffffff"..
-"Summons your Target to your Position.\n"..
-"You need GameMaster-Rights to use this Button.|r\n\n"..
-"|cffff0000Left-Click to summon your Target|r\n"..
-"|cff999999(Execution-Order: Target)|r";
+"召唤\n|cffffffff"..
+"将你的目标召唤到你的位置。\n"..
+"您需要游戏管理员权限才能使用此按钮。|r\n\n"..
+"|cffff0000左键单击召唤你的目标|r\n"..
+"|cff999999(执行命令: 目标)|r";
 
+-- 传送
 MultiBot.tips.game.appear =
-"Appear\n|cffffffff"..
-"You will appear at the Position of your Target.\n"..
-"You need GameMaster-Rights to use this Button.|r\n\n"..
-"|cffff0000Left-Click to appear at your Target|r\n"..
-"|cff999999(Execution-Order: Target)|r";
+"传送\n|cffffffff"..
+"你将出现在你的目标位置。\n"..
+"您需要游戏管理员权限才能使用此按钮。|r\n\n"..
+"|cffff0000左键单击传送到你的目标|r\n"..
+"|cff999999(执行命令: 目标)|r";
 
 local tButton = tMultiBar.addButton("Masters", 38, 0, "mail_gmicon", MultiBot.tips.game.master)
 tButton:RegisterForDrag("RightButton")
@@ -1675,11 +1717,11 @@ local tRight = tMultiBar.addFrame("Right", 72, 2, 32)
 
 MultiBot.tips.drink = {}
 MultiBot.tips.drink.group = 
-"Group-Drink\n|cffffffff"..
-"With this Button you order the Group to drink.\n"..
-"The Execution-Order shows the Receiver for Commandos.|r\n\n"..
-"|cffff0000Left-Click to execute Group-Drink|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r";
+"团队饮水\n|cffffffff"..
+"使用此按钮命令团队饮水。\n"..
+"执行命令时显示命令的接收者。|r\n\n"..
+"|cffff0000左键单击执行团队饮水|r\n"..
+"|cff999999(执行命令: 团队, 队伍)|r";
 
 tRight.addButton("Drink", 0, 0, "inv_drink_24_sealwhey", MultiBot.tips.drink.group)
 .doLeft = function(pButton)
@@ -1690,11 +1732,11 @@ end
 
 MultiBot.tips.release = {}
 MultiBot.tips.release.group = 
-"Group-Release\n|cffffffff"..
-"With this Button the dead Bots will release there Ghosts to the next Graveyard.\n"..
-"The Execution-Order shows the Receiver for Commandos.|r\n\n"..
-"|cffff0000Left-Click to execute Group-Release|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r";
+"团队释放\n|cffffffff"..
+"使用此按钮，死亡的机器人将释放其灵魂到下一个墓地。\n"..
+"执行命令时显示命令的接收者。|r\n\n"..
+"|cffff0000左键单击执行团队释放|r\n"..
+"|cff999999(执行命令: 团队, 队伍)|r";
 
 tRight.addButton("Release", 34, 0, "achievement_bg_xkills_avgraveyard", MultiBot.tips.release.group)
 .doLeft = function(pButton)
@@ -1705,11 +1747,11 @@ end
 
 MultiBot.tips.revive = {}
 MultiBot.tips.revive.group = 
-"Group-Revive\n|cffffffff"..
-"With this Button the Ghost-Bots will revive on the next Graveyard.\n"..
-"The Execution-Order shows the Receiver for Commandos.|r\n\n"..
-"|cffff0000Left-Click to execute Group-Revive|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r";
+"团队复活\n|cffffffff"..
+"使用此按钮，灵魂状态的机器人将在下一个墓地复活。\n"..
+"执行命令时显示命令的接收者。|r\n\n"..
+"|cffff0000左键单击执行团队复活|r\n"..
+"|cff999999(执行命令: 团队, 队伍)|r";
 
 tRight.addButton("Revive", 68, 0, "spell_holy_guardianspirit", MultiBot.tips.revive.group)
 .doLeft = function(pButton)
@@ -1720,11 +1762,11 @@ end
 
 MultiBot.tips.summon = {}
 MultiBot.tips.summon.group = 
-"Group-Summon\n|cffffffff"..
-"With this Button you summon the Group to your Position.\n"..
-"The Execution-Order shows the Receiver for Commandos.|r\n\n"..
-"|cffff0000Left-Click to execute Group-Summon|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r";
+"团队召唤\n|cffffffff"..
+"使用此按钮将团队召唤到你的位置。\n"..
+"执行命令时显示命令的接收者。|r\n\n"..
+"|cffff0000左键单击执行团队召唤|r\n"..
+"|cff999999(执行命令: 团队, 队伍)|r";
 
 tRight.addButton("Summon", 102, 0, "ability_hunter_beastcall", MultiBot.tips.summon.group)
 .doLeft = function(pButton)
@@ -1735,37 +1777,41 @@ end
 
 MultiBot.tips.inventory = {}
 
+-- 背包 - 出售物品
 MultiBot.tips.inventory.sell =
-"Sell-Items|cffffffff\n"..
-"It enables the Sell-Mode of the Inventory.\n"..
-"You must have a Merchent as Target.\n"..
-"For security Resons your Bot will not sell:\n"..
-"- every Item with 'Key' in its Name\n"..
-"- the Hearthstone|r\n\n"..
-"|cffff0000Left-Click to sell a Item|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"出售物品 |cffffffff\n"..
+"此功能启用背包的出售模式。\n"..
+"你必须将商人设置为目标。\n"..
+"出于安全原因，你的机器人不会出售：\n"..
+" - 名称中包含 '钥匙' 的任何物品\n"..
+" - 炉石 |r\n\n"..
+"|cffff0000左键单击出售物品|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
+-- 背包 - 装备物品
 MultiBot.tips.inventory.equip =
-"Equip-Items|cffffffff\n"..
-"It enables the Equip-Mode of the Inventory.|r\n\n"..
-"|cffff0000Left-Click to equip a Item|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"装备物品 |cffffffff\n"..
+"此功能启用背包的装备模式。|r\n\n"..
+"|cffff0000左键单击装备物品|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
+-- 背包 - 使用物品
 MultiBot.tips.inventory.use =
-"Use-Items|cffffffff\n"..
-"It enables the Use-Mode of the Inventory.|r\n\n"..
-"|cffff0000Left-Click to use a Item|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"使用物品 |cffffffff\n"..
+"此功能启用背包的使用模式。|r\n\n"..
+"|cffff0000左键单击使用物品|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
+-- 背包 - 丢弃物品
 MultiBot.tips.inventory.drop =
-"Drop-Items|cffffffff\n"..
-"It enables the Drop-Mode of the Inventory.\n"..
-"For security Resons your Bot will not drop:\n"..
-"- every Item with a Quality of Epic or higher\n"..
-"- every Item with 'Key' in its Name\n"..
-"- the Hearthstone|r\n\n"..
-"|cffff0000Left-Click to drop a Item|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"丢弃物品 |cffffffff\n"..
+"此功能启用背包的丢弃模式。\n"..
+"出于安全原因，你的机器人不会丢弃：\n"..
+" - 稀有品质或更高品质的任何物品\n"..
+" - 名称中包含 '钥匙' 的任何物品\n"..
+" - 炉石 |r\n\n"..
+"|cffff0000左键单击丢弃物品|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.inventory = MultiBot.newFrame(MultiBot, -700, -144, 32, 442, 884)
 MultiBot.inventory.addTexture("Interface\\AddOns\\MultiBot\\Textures\\Inventory.blp")
@@ -1899,59 +1945,60 @@ tFrame:Show()
 -- ITEMUS:LEVEL --
 
 MultiBot.tips.itemus.level = {}
+-- 物品生成器 - 等级过滤器
 MultiBot.tips.itemus.level.master =
-"Level-Filter|cffffffff\n"..
-"Filters the Items by Level in a range of 10.|r\n\n"..
-"|cffff0000Left-Click to show or hide Options|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"等级过滤器 |cffffffff\n"..
+"以 10 级为间隔过滤物品。|r\n\n"..
+"|cffff0000左键单击显示或隐藏选项|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.level.L10 =
-"Level 0 to 10|cffffffff\n"..
-"Shows the Items with a required Level between 0 and 10.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"0 级到 10 级 |cffffffff\n"..
+"显示需要等级介于 0 到 10 之间的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.level.L20 =
-"Level 11 to 20|cffffffff\n"..
-"Shows the Items with a required Level between 11 and 20.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"11 级到 20 级 |cffffffff\n"..
+"显示需要等级介于 11 到 20 之间的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.level.L30 =
-"Level 21 to 30|cffffffff\n"..
-"Shows the Items with a required Level between 21 and 30.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"21 级到 30 级 |cffffffff\n"..
+"显示需要等级介于 21 到 30 之间的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.level.L40 =
-"Level 31 to 40|cffffffff\n"..
-"Shows the Items with a required Level between 31 and 40.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"31 级到 40 级 |cffffffff\n"..
+"显示需要等级介于 31 到 40 之间的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.level.L50 =
-"Level 41 to 50|cffffffff\n"..
-"Shows the Items with a required Level between 41 and 50.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"41 级到 50 级 |cffffffff\n"..
+"显示需要等级介于 41 到 50 之间的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.level.L60 =
-"Level 51 to 60|cffffffff\n"..
-"Shows the Items with a required Level between 51 and 60.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"51 级到 60 级 |cffffffff\n"..
+"显示需要等级介于 51 到 60 之间的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.level.L70 =
-"Level 61 to 70|cffffffff\n"..
-"Shows the Items with a required Level between 61 and 70.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"61 级到 70 级 |cffffffff\n"..
+"显示需要等级介于 61 到 70 之间的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.level.L80 =
-"Level 71 to 80|cffffffff\n"..
-"Shows the Items with a required Level between 71 and 80.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"71 级到 80 级 |cffffffff\n"..
+"显示需要等级介于 71 到 80 之间的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.itemus.addButton("Level", -94, 806, "achievement_level_10", MultiBot.tips.itemus.level.master).setEnable()
 .doLeft = function(pButton)
@@ -2020,60 +2067,61 @@ end
 -- ITEMUS:RARE --
 
 MultiBot.tips.itemus.rare = {}
+-- 物品生成器 - 品质过滤器
 MultiBot.tips.itemus.rare.master =
-"Quality-Filter|cffffffff\n"..
-"Filters the Items by Quality.\n"..
-"This Filter is additive to the Level-Filter.|r\n\n"..
-"|cffff0000Left-Click to show or hide Options|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"品质过滤器 |cffffffff\n"..
+"根据物品品质进行过滤。\n"..
+"此过滤器可以叠加在等级过滤器之上。|r\n\n"..
+"|cffff0000左键单击显示或隐藏选项|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.rare.R00 =
-"Poor-Quality|cffffffff\n"..
-"Shows the Items with a Poor-Quality.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"普通品质 |cffffffff\n"..
+"显示普通品质的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.rare.R01 =
-"Common-Quality|cffffffff\n"..
-"Shows the Items with a Common-Quality.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"一般品质 |cffffffff\n"..
+"显示一般品质的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.rare.R02 =
-"Non-Common-Quality|cffffffff\n"..
-"Shows the Items with a Non-Common-Quality.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"非一般品质 |cffffffff\n"..
+"显示非一般品质的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.rare.R03 =
-"Rare-Quality|cffffffff\n"..
-"Shows the Items with a Rare-Quality.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"稀有品质 |cffffffff\n"..
+"显示稀有品质的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.rare.R04 =
-"Epic-Quality|cffffffff\n"..
-"Shows the Items with a Epic-Quality.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"史诗品质 |cffffffff\n"..
+"显示史诗品质的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.rare.R05 =
-"Legendary-Quality|cffffffff\n"..
-"Shows the Items with a Legendary-Quality.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
+"传说品质 |cffffffff\n"..
+"显示传说品质的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
 "|cff999999(Execution-Order: System)|r";
 
 MultiBot.tips.itemus.rare.R06 =
-"Artifact-Quality|cffffffff\n"..
-"Shows the Items with a Artifact-Quality.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"神器品质 |cffffffff\n"..
+"显示神器品质的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.rare.R07 =
-"Heirlooms-Quality|cffffffff\n"..
-"Shows the Items with a Heirlooms-Quality.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"传家宝品质 |cffffffff\n"..
+"显示传家宝品质的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.itemus.addButton("Rare", -94, 768, "achievement_quests_completed_01", MultiBot.tips.itemus.rare.master)
 .doLeft = function(pButton)
@@ -2150,193 +2198,194 @@ end
 -- ITEMUS:SLOT --
 
 MultiBot.tips.itemus.slot = {}
+-- 物品生成器 - 槽位过滤器
 MultiBot.tips.itemus.slot.master =
-"Slot-Filter|cffffffff\n"..
-"Filters the Items by Slot.\n"..
-"This Filter is additive to the Level- and Quality-Filter.|r\n\n"..
-"|cffff0000Left-Click to show or hide Options|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"槽位过滤器 |cffffffff\n"..
+"根据物品槽位进行过滤。\n"..
+"此过滤器可以叠加在等级和品质过滤器之上。|r\n\n"..
+"|cffff0000左键单击显示或隐藏选项|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S00 =
-"Non-Equipable|cffffffff\n"..
-"Shows the Items which are not equipable.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"不可装备 |cffffffff\n"..
+"显示不可装备的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S01 =
-"Head-Slot|cffffffff\n"..
-"Shows the Items for the Head-Slot.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"头部 |cffffffff\n"..
+"显示头部装备的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S02 =
-"Neck-Slot|cffffffff\n"..
-"Shows the Items for the Neck-Slot.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"颈部 |cffffffff\n"..
+"显示颈部装备的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S03 =
-"Shoulder-Slot|cffffffff\n"..
-"Shows the Items for the Shoulder-Slot.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"肩部 |cffffffff\n"..
+"显示肩部装备的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S04 =
-"Shirt-Slot|cffffffff\n"..
-"Shows the Items for the Shirt-Slot.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"衬衫槽位 |cffffffff\n"..
+"显示衬衫槽位的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S05 =
-"Chest-Slot|cffffffff\n"..
-"Shows the Items for the Chest-Slot.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"胸部 |cffffffff\n"..
+"显示胸部装备的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S06 =
-"Waist-Slot|cffffffff\n"..
-"Shows the Items for the Waist-Slot.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"腰部 |cffffffff\n"..
+"显示腰部装备的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S07 =
-"Legs-Slot|cffffffff\n"..
-"Shows the Items for the Legs-Slot.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"腿部 |cffffffff\n"..
+"显示腿部装备的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S08 =
-"Feets-Slot|cffffffff\n"..
-"Shows the Items for the Feets-Slot.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"脚部 |cffffffff\n"..
+"显示脚部装备的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S09 =
-"Wrists-Slot|cffffffff\n"..
-"Shows the Items for the Wrists-Slot.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"手腕槽位 |cffffffff\n"..
+"显示手腕装备的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S10 =
-"Hands-Slot|cffffffff\n"..
-"Shows the Items for the Hands-Slot.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"手部 |cffffffff\n"..
+"显示手部装备的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S11 =
-"Finger-Slot|cffffffff\n"..
-"Shows the Items for the Finger-Slot.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"手指 |cffffffff\n"..
+"显示手指装备的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S12 =
-"Trinket-Slot|cffffffff\n"..
-"Shows the Items for the Trinket-Slot.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"饰品槽位 |cffffffff\n"..
+"显示饰品槽位的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S13 =
-"One-Hand-Weapon-Slot|cffffffff\n"..
-"Shows the Items for the One-Hand-Weapon-Slot.\n"..
-"Notice that this Item could be used as Main- and Off-Hand-Weapons.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"单手武器槽位 |cffffffff\n"..
+"显示单手武器槽位的物品。\n"..
+"注意：此物品可以作为主手或副手武器使用。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S14 =
-"Shield-Slot|cffffffff\n"..
-"Shows the Items for the Shield-Slot.\n"..
-"Notice that this Slot is the same as Off-Hand-Weapons.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"盾牌槽位 |cffffffff\n"..
+"显示盾牌槽位的物品。|r\n"..
+"注意：此槽位与副手武器槽位相同。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S15 =
-"Ranged-Slot|cffffffff\n"..
-"Shows the Items for the Ranged-Slot.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"远程武器槽位 |cffffffff\n"..
+"显示远程武器槽位的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S16 =
-"Back-Slot|cffffffff\n"..
-"Shows the Items for the Back-Slot.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"背部槽位 |cffffffff\n"..
+"显示背部装备的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S17 =
-"Two-Hand-Weapon-Slot|cffffffff\n"..
-"Shows the Items for the Two-Hand-Weapon-Slot.\n"..
-"Notice that this Slot is the same as Main-Hand-Weapons.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"双手武器槽位 |cffffffff\n"..
+"显示双手武器槽位的物品。|r\n"..
+"注意：此槽位与主手武器槽位相同。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S18 =
-"Bag-Slot|cffffffff\n"..
-"Shows the Items for the Bag-Slot.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"背包槽位 |cffffffff\n"..
+"显示背包槽位的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S19 =
-"Tabard-Slot|cffffffff\n"..
-"Shows the Items for the Tabard-Slot.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"披风槽位 |cffffffff\n"..
+"显示披风槽位的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S20 =
-"Robe-Slot|cffffffff\n"..
-"Shows the Items for the Robe-Slot.\n"..
-"Notice that this Slot is the same as for Chests.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"长袍槽位 |cffffffff\n"..
+"显示长袍槽位的物品。|r\n"..
+"注意：此槽位与胸部相同。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S21 =
-"Main-Hand-Weapons-Slot|cffffffff\n"..
-"Shows the Items for the Main-Hand-Weapons-Slot.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"主手武器槽位 |cffffffff\n"..
+"显示主手武器槽位的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S22 =
-"Off-Hand-Weapons-Slot|cffffffff\n"..
-"Shows the Items for the Off-Hand-Weapons-Slot.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"副手武器槽位 |cffffffff\n"..
+"显示副手武器槽位的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S23 =
-"Off-Hand-Items-Slot|cffffffff\n"..
-"Shows the Items for the Off-Hand-Items-Slot.\n"..
-"Notice that this Slot is the same as Off-Hand-Weapons.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"副手物品槽位 |cffffffff\n"..
+"显示副手物品槽位的物品。|r\n"..
+"注意：此槽位与副手武器相同。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S24 =
-"Ammo-Slot|cffffffff\n"..
-"Shows the Items for the Ammo-Slot.\n"..
-"Notice that this Slot is the same as Ranged-Right.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"弹药槽位 |cffffffff\n"..
+"显示弹药槽位的物品。|r\n"..
+"注意：此槽位与远程-右手相同。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S25 =
-"Throw-Slot|cffffffff\n"..
-"Shows the Items for the Throw-Slot.\n"..
-"Notice that this Slot is the same as Ranged.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
+"投掷物槽位 |cffffffff\n"..
+"显示投掷物槽位的物品。|r\n"..
+"注意：此槽位与远程相同。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
 "|cff999999(Execution-Order: System)|r";
 
 MultiBot.tips.itemus.slot.S26 =
-"Ranged-Right-Slot|cffffffff\n"..
-"Shows the Items for the Ranged-Right-Slot.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"远程-右手槽位 |cffffffff\n"..
+"显示远程-右手槽位的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S27 =
-"Quiver-Slot|cffffffff\n"..
-"Shows the Items for the Quiver-Slot.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"箭筒槽位 |cffffffff\n"..
+"显示箭筒槽位的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S28 =
-"Relic-Slot|cffffffff\n"..
-"Shows the Items for the Relic-Slot.|r\n\n"..
-"|cffff0000Left-Click to set Filter|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"圣物槽位 |cffffffff\n"..
+"显示圣物槽位的物品。|r\n\n"..
+"|cffff0000左键单击设置过滤器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.itemus.addButton("Slot", -94, 731, "inv_drink_18", MultiBot.tips.itemus.slot.master)
 .doLeft = function(pButton)
@@ -2552,11 +2601,11 @@ end
 -- ITEMUS:TYPE --
 
 MultiBot.tips.itemus.type =
-"Type-Filter|cffffffff\n"..
-"With this Filter you can switch between Player-Character and Non-Player-Character Items.\n"..
-"This Filter is additive to the Level-, Quality- and Slot-Filter.|r\n\n"..
-"|cffff0000Left-Click to enable or disable NPC-Stuff|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"类型过滤器 |cffffffff\n"..
+"使用此过滤器可以在玩家角色物品和非玩家角色物品之间切换。\n"..
+"此过滤器可以叠加在等级、品质和槽位过滤器之上。|r\n\n"..
+"|cffff0000左键单击启用或禁用NPC物品|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.itemus.addButton("Type", -94, 694, "inv_misc_head_clockworkgnome_01", MultiBot.tips.itemus.type).setDisable()
 .doLeft = function(pButton)
