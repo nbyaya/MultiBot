@@ -1,4 +1,4 @@
--- MULTIBAR --
+﻿-- MULTIBAR --
 
 local tMultiBar = MultiBot.addFrame("MultiBar", -262, 144, 36)
 tMultiBar:SetMovable(true)
@@ -12,7 +12,7 @@ local tLeft = tMultiBar.addFrame("Left", -76, 2, 32)
 MultiBot.tips.tanker = {}
 MultiBot.tips.tanker.master = 
 "坦克攻击\n|cffffffff"..
-"按此按钮坦克开始攻击你的目标.\n"..
+"按此按钮坦克开始攻击你的目标。\n"..
 "执行命令时显示命令的接收者。|r\n\n"..
 "|cffff0000左键点击执行 坦克攻击|r\n"..
 "|cff999999(执行命令: 团队, 小队)|r";
@@ -26,13 +26,13 @@ end
 
 MultiBot.tips.attack = {}
 MultiBot.tips.attack.master = 
-"攻击控制\n|cffffffff".. 
-"使用此控制，您可以发出攻击命令。\n".. 
-"右键点击选项来定义新的默认动作。\n".. 
-"执行命令时显示命令的接收者。|r\n\n".. 
-"|cffff0000左键点击执行默认动作|r\n".. 
-"|cff999999(执行命令: 团队, 队伍)|r\n\n".. 
-"|cffff0000右键点击显示或隐藏选项|r\n".. 
+"攻击控制\n|cffffffff"..
+"使用此控制，您可以发出攻击命令。\n"..
+"右键点击选项来定义新的默认动作。\n"..
+"执行命令时显示命令的接收者。|r\n\n"..
+"|cffff0000左键点击执行默认动作|r\n"..
+"|cff999999(执行命令: 团队, 队伍)|r\n\n"..
+"|cffff0000右键点击显示或隐藏选项|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.attack.attack = 
@@ -83,7 +83,6 @@ MultiBot.tips.attack.tank =
 "|cff999999(执行命令: 团队, 小队)|r\n\n".. 
 "|cffff0000右键点击设为默认动作|r\n".. 
 "|cff999999(执行命令: 系统)|r";
-
 
 local tButton = tLeft.addButton("Attack", -204, 0, "Interface\\AddOns\\MultiBot\\Icons\\attack.blp", MultiBot.tips.attack.master)
 tButton.doRight = function(pButton)
@@ -171,7 +170,6 @@ MultiBot.tips.mode.grind =
 "|cffff0000左键点击选择并激活打怪模式|r\n".. 
 "|cff999999(执行命令: 团队, 小队)|r";
 
-
 local tButton = tLeft.addButton("Mode", -170, 0, "Interface\\AddOns\\MultiBot\\Icons\\mode_passive.blp", MultiBot.tips.mode.master).setDisable()
 tButton.doRight = function(pButton)
 	MultiBot.ShowHideSwitch(pButton.parent.frames["Mode"])
@@ -232,7 +230,6 @@ MultiBot.tips.stallow.follow =
 "执行命令时显示命令的接收者。|r\n\n".. 
 "|cffff0000左键点击执行跟随|r\n".. 
 "|cff999999(执行命令: 团队, 小队)|r";
-
 
 tLeft.addButton("Stay", -136, 0, "Interface\\AddOns\\MultiBot\\Icons\\command_follow.blp", MultiBot.tips.stallow.stay)
 .doLeft = function(pButton)
@@ -318,7 +315,6 @@ MultiBot.tips.flee.target =
 "|cff999999(执行命令: 目标)|r\n\n".. 
 "|cffff0000右键点击设为默认动作|r\n".. 
 "|cff999999(执行命令: 系统)|r";
-
 
 local tButton = tLeft.addButton("Flee", -102, 0, "Interface\\AddOns\\MultiBot\\Icons\\flee.blp", MultiBot.tips.flee.master)
 tButton.doRight = function(pButton)
@@ -459,7 +455,6 @@ MultiBot.tips.format.shield =
 "|cffff0000左键点击选择盾牌阵型|r\n".. 
 "|cff999999(执行命令: 团队, 小队)|r";
 
-
 local tButton = tLeft.addButton("Format", -68, 0, "Interface\\AddOns\\MultiBot\\Icons\\formation_near.blp", MultiBot.tips.format.master)
 tButton.doRight = function(pButton)
 	MultiBot.ActionToGroup("formation")
@@ -553,7 +548,6 @@ MultiBot.tips.beast.call =
 "此命令将召唤野兽。|r\n\n".. 
 "|cffff0000左键点击召唤野兽|r\n".. 
 "|cff999999(执行命令: 目标, 团队, 小队)|r";
-
 
 tLeft.addButton("Beast", -34, 0, "ability_mount_swiftredwindrider", MultiBot.tips.beast.master)
 .doLeft = function(pButton)
@@ -948,89 +942,74 @@ tControl:Show()
 
 -- UNIT:FILTER --
 
--- 所有职业筛选器的提示信息
-
 MultiBot.tips.units.filter =
-  "职业筛选器\n|cffffffff"..
+"职业筛选器\n|cffffffff"..
   "通过职业筛选器你可以根据职业来过滤单位。|r\n\n"..
   "|cffff0000左键单击显示或隐藏选项|r\n"..
   "|cff999999(执行命令: 系统)|r\n\n"..
   "|cffff0000右键单击重置筛选器|r\n"..
   "|cff999999(执行命令: 系统)|r";
 
--- 死亡骑士筛选器
 MultiBot.tips.units.deathknight =
   "职业筛选器\n|cffffffff"..
   "将单位筛选为死亡骑士。|r\n\n"..
   "|cffff0000左键单击筛选死亡骑士|r\n"..
   "|cff999999(执行命令: 系统)|r";
 
--- 德鲁伊筛选器
 MultiBot.tips.units.druid =
   "职业筛选器\n|cffffffff"..
   "将单位筛选为德鲁伊。|r\n\n"..
   "|cffff0000左键单击筛选德鲁伊|r\n"..
   "|cff999999(执行命令: 系统)|r";
 
--- 猎人筛选器
 MultiBot.tips.units.hunter =
   "职业筛选器\n|cffffffff"..
   "将单位筛选为猎人。|r\n\n"..
   "|cffff0000左键单击筛选猎人|r\n"..
   "|cff999999(执行命令: 系统)|r";
 
--- ... 其他职业筛选器（法师、战士、牧师等） ...
-
--- 法师筛选器
 MultiBot.tips.units.mage =
 "职业筛选器\n|cffffffff"..
 "将单位筛选为法师。|r\n\n"..
 "|cffff0000左键单击筛选法师|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 圣骑士筛选器
 MultiBot.tips.units.paladin =
 "职业筛选器\n|cffffffff"..
 "将单位筛选为圣骑士。|r\n\n"..
 "|cffff0000左键单击筛选圣骑士|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 牧师筛选器
 MultiBot.tips.units.priest =
 "职业筛选器\n|cffffffff"..
 "将单位筛选为牧师。|r\n\n"..
 "|cffff0000左键单击筛选牧师|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 盗贼筛选器
 MultiBot.tips.units.rogue =
 "职业筛选器\n|cffffffff"..
 "将单位筛选为盗贼。|r\n\n"..
 "|cffff0000左键单击筛选盗贼|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 萨满祭司筛选器
 MultiBot.tips.units.shaman =
 "职业筛选器\n|cffffffff"..
 "将单位筛选为萨满祭司。|r\n\n"..
 "|cffff0000左键单击筛选萨满祭司|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 术士筛选器
 MultiBot.tips.units.warlock =
 "职业筛选器\n|cffffffff"..
 "将单位筛选为术士。|r\n\n"..
 "|cffff0000左键单击筛选术士|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 战士筛选器
 MultiBot.tips.units.warrior =
 "职业筛选器\n|cffffffff"..
 "将单位筛选为战士。|r\n\n"..
 "|cffff0000左键单击筛选战士|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 无筛选器
 MultiBot.tips.units.none =
 "职业筛选器\n|cffffffff"..
 "移除单位的职业筛选器。|r\n\n"..
@@ -1129,7 +1108,6 @@ end
 
 -- UNITS:ROSTER --
 
--- 团队筛选器
 MultiBot.tips.units.roster =
 "团队筛选器\n|cffffffff"..
 "通过团队筛选器，你可以切换不同的团队。|r\n\n"..
@@ -1138,14 +1116,12 @@ MultiBot.tips.units.roster =
 "|cffff0000右键单击重置筛选器|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 活动团队
 MultiBot.tips.units.actives =
 "团队筛选器\n|cffffffff"..
 "显示活动团队。|r\n\n"..
 "|cffff0000左键单击选择活动团队|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 玩家机器人团队
 MultiBot.tips.units.players =
 "团队筛选器\n|cffffffff"..
 "显示玩家机器人团队。\n"..
@@ -1153,7 +1129,6 @@ MultiBot.tips.units.players =
 "|cffff0000左键单击选择玩家机器人团队|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 公会团队
 MultiBot.tips.units.members =
 "团队筛选器\n|cffffffff"..
 "显示公会团队。\n"..
@@ -1161,7 +1136,6 @@ MultiBot.tips.units.members =
 "|cffff0000左键单击选择公会团队|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 好友团队
 MultiBot.tips.units.friends =
 "团队筛选器\n|cffffffff"..
 "显示好友团队。\n"..
@@ -1220,7 +1194,6 @@ end
 
 -- UNIT:BROWSE --
 
--- 浏览团队
 MultiBot.tips.units.browse =
 "浏览团队\n|cffffffff"..
 "使用此按钮可以浏览团队列表。\n"..
@@ -1228,7 +1201,6 @@ MultiBot.tips.units.browse =
 "|cffff0000左键单击浏览团队|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 邀请控制
 MultiBot.tips.units.invite =
 "邀请控制\n|cffffffff"..
 "使用此控制可以自动填充你的队伍。\n"..
@@ -1239,7 +1211,6 @@ MultiBot.tips.units.invite =
 "|cffff0000右键点击移除所有机器人|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 邀请五人组
 MultiBot.tips.units.inviteParty5 =
 "五人组\n|cffffffff"..
 "使用此按钮可以填充你的队伍。\n"..
@@ -1248,7 +1219,6 @@ MultiBot.tips.units.inviteParty5 =
 "|cffff0000左键单击邀请组队成员|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 邀请十人团队
 MultiBot.tips.units.inviteRaid10 =
 "十人团队\n|cffffffff"..
 "使用此按钮可以填充你的团队。\n"..
@@ -1257,7 +1227,6 @@ MultiBot.tips.units.inviteRaid10 =
 "|cffff0000左键单击邀请团队成员|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 邀请二十五人团队
 MultiBot.tips.units.inviteRaid25 =
 "二十五人团队\n|cffffffff"..
 "使用此按钮可以填充你的团队。\n"..
@@ -1266,7 +1235,6 @@ MultiBot.tips.units.inviteRaid25 =
 "|cffff0000左键单击邀请团队成员|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 邀请四十人团队
 MultiBot.tips.units.inviteRaid40 =
 "四十人团队\n|cffffffff"..
 "使用此按钮可以填充你的团队。\n"..
@@ -1388,7 +1356,6 @@ end
 
 -- MAIN --
 
--- 主控制面板
 MultiBot.tips.main = {}
 MultiBot.tips.main.master =
 "主控制面板\n|cffffffff"..
@@ -1399,7 +1366,6 @@ MultiBot.tips.main.master =
 "|cffff0000右键单击关闭 MultiBot|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 重置坐标
 MultiBot.tips.main.coords =
 "重置坐标\n|cffffffff"..
 "重置以下功能的坐标：\n"..
@@ -1407,7 +1373,6 @@ MultiBot.tips.main.coords =
 "|cffff0000左键单击重置坐标|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 自动释放
 MultiBot.tips.main.release =
 "自动释放\n|cffffffff"..
 "此功能可以检测机器人的死亡。\n"..
@@ -1415,7 +1380,6 @@ MultiBot.tips.main.release =
 "|cffff0000左键单击启用或禁用自动释放|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 自动属性
 MultiBot.tips.main.stats =
 "自动属性\n|cffffffff"..
 "此功能可视化属性数据。\n"..
@@ -1436,21 +1400,22 @@ MultiBot.tips.main.reward =
 "- (必须) AiPlayerbot.AutoPickReward = no\n"..
 "- (推荐) AiPlayerbot.SyncQuestWithPlayer = 1|r\n\n"..
 "|cffff0000左键点击以启用或禁用奖励选择器|r\n"..
+"|cff999999(执行命令: 系统)|r\n\n"..
+"|cffff0000右键点击可打开奖励选择器|r\n"..
 "|cff999999(执行命令: 系统)|r";
+
 MultiBot.tips.main.naxx =
 "纳克萨玛斯策略\n|cffffffff"..
 "此按钮将激活你机器人的纳克萨玛斯策略。|r\n\n"..
 "|cffff0000左键单击激活纳克萨玛斯策略|r\n"..
 "|cff999999(执行命令: 目标、团队、队伍)|r";
 
--- 重置机器人
 MultiBot.tips.main.reset =
 "重置机器人\n|cffffffff"..
 "此按钮将重置你机器人的人工智能。|r\n\n"..
 "|cffff0000左键单击重置人工智能|r\n"..
 "|cff999999(执行命令: 目标、团队、队伍)|r";
 
--- 重置动作
 MultiBot.tips.main.action =
 "重置动作\n|cffffffff"..
 "此按钮将重置你机器人的当前动作。|r\n\n"..
@@ -1525,7 +1490,6 @@ end
 
 -- MASTERS --
 
--- 游戏管理员控制面板
 MultiBot.tips.game = {}
 MultiBot.tips.game.master =
 "游戏管理员控制面板\n|cffffffff"..
@@ -1536,7 +1500,6 @@ MultiBot.tips.game.master =
 "|cffff0000右键单击拖动和移动 MultiBot|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 亡灵帝国
 MultiBot.tips.game.necronet =
 "亡灵帝国\n|cffffffff"..
 "此按钮启用或禁用亡灵帝国。\n"..
@@ -1546,7 +1509,6 @@ MultiBot.tips.game.necronet =
 "|cffff0000左键单击启用或禁用亡灵帝国|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 记忆传送门
 MultiBot.tips.game.portal =
 "记忆传送门\n|cffffffff"..
 "此框中包含记忆宝石。\n"..
@@ -1556,26 +1518,24 @@ MultiBot.tips.game.portal =
 "|cffff0000左键单击显示或隐藏灵魂宝石|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 记忆宝石
 MultiBot.tips.game.memory =
 "记忆宝石\n|cffffffff"..
-"关于记忆宝石。\n"..
+"This Memory-Gem ABOUT.\n"..
 "您需要游戏管理员权限才能使用此按钮。|r\n\n"..
 "|cffff0000左键单击存储或传送到该位置|r\n"..
 "|cff999999(执行命令: 目标)|r\n\n"..
 "|cffff0000右键单击忘记该位置|r\n"..
 "|cff999999(执行命令: 目标)|r";
 
--- 物品生成器
 MultiBot.tips.game.itemus = 
 "物品生成器\n|cffffffff"..
 "游戏管理员工具箱中包含所有物品。\n"..
 "只需选择玩家或机器人，然后左键单击物品，愿望即可成真。\n"..
-"重要提示，并非所有物品都可以生成，因此您需要尝试找出可生成的物品。|r\n\n"..
+"重要提示，并非所有物品都可以生成，因此您需要尝试找出可生成的物品。\n"..
+"执行命令显示了指令的接收者。|r\n\n"..
 "|cffff0000左键单击打开或关闭物品生成器|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 图标生成器
 MultiBot.tips.game.iconos = 
 "图标生成器\n|cffffffff"..
 "此工具中包含所有图标及其路径。\n"..
@@ -1583,7 +1543,6 @@ MultiBot.tips.game.iconos =
 "|cffff0000左键单击打开或关闭图标生成器|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
--- 召唤
 MultiBot.tips.game.summon =
 "召唤\n|cffffffff"..
 "将你的目标召唤到你的位置。\n"..
@@ -1591,7 +1550,6 @@ MultiBot.tips.game.summon =
 "|cffff0000左键单击召唤你的目标|r\n"..
 "|cff999999(执行命令: 目标)|r";
 
--- 传送
 MultiBot.tips.game.appear =
 "传送\n|cffffffff"..
 "你将出现在你的目标位置。\n"..
@@ -1777,7 +1735,6 @@ end
 
 MultiBot.tips.inventory = {}
 
--- 背包 - 出售物品
 MultiBot.tips.inventory.sell =
 "出售物品 |cffffffff\n"..
 "此功能启用背包的出售模式。\n"..
@@ -1788,21 +1745,18 @@ MultiBot.tips.inventory.sell =
 "|cffff0000左键单击出售物品|r\n"..
 "|cff999999(执行命令: 机器人)|r";
 
--- 背包 - 装备物品
 MultiBot.tips.inventory.equip =
 "装备物品 |cffffffff\n"..
 "此功能启用背包的装备模式。|r\n\n"..
 "|cffff0000左键单击装备物品|r\n"..
 "|cff999999(执行命令: 机器人)|r";
 
--- 背包 - 使用物品
 MultiBot.tips.inventory.use =
 "使用物品 |cffffffff\n"..
 "此功能启用背包的使用模式。|r\n\n"..
 "|cffff0000左键单击使用物品|r\n"..
 "|cff999999(执行命令: 机器人)|r";
 
--- 背包 - 丢弃物品
 MultiBot.tips.inventory.drop =
 "丢弃物品 |cffffffff\n"..
 "此功能启用背包的丢弃模式。\n"..
@@ -1945,7 +1899,6 @@ tFrame:Show()
 -- ITEMUS:LEVEL --
 
 MultiBot.tips.itemus.level = {}
--- 物品生成器 - 等级过滤器
 MultiBot.tips.itemus.level.master =
 "等级过滤器 |cffffffff\n"..
 "以 10 级为间隔过滤物品。|r\n\n"..
@@ -2067,7 +2020,6 @@ end
 -- ITEMUS:RARE --
 
 MultiBot.tips.itemus.rare = {}
--- 物品生成器 - 品质过滤器
 MultiBot.tips.itemus.rare.master =
 "品质过滤器 |cffffffff\n"..
 "根据物品品质进行过滤。\n"..
@@ -2198,7 +2150,6 @@ end
 -- ITEMUS:SLOT --
 
 MultiBot.tips.itemus.slot = {}
--- 物品生成器 - 槽位过滤器
 MultiBot.tips.itemus.slot.master =
 "槽位过滤器 |cffffffff\n"..
 "根据物品槽位进行过滤。\n"..

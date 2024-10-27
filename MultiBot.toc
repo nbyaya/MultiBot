@@ -2,7 +2,7 @@
 ## Version: 2.0.0
 ## Title: 机器人指挥中心
 ## Notes: PlayerBots的玩家控制中心
-## Author: Nico Löbbert 汉化: leewheel
+## Author: Nico Löbbert 汉化: leewheel 优化：鸦鸦
 ## SavedVariables: MultiBotSave
 
 MultiBotEngine.lua
