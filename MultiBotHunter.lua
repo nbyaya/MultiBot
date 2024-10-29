@@ -4,98 +4,98 @@ MultiBot.tips.hunter.naspect = {}
 MultiBot.tips.hunter.caspect = {}
 
 MultiBot.tips.hunter.naspect.master =
-"Non-Combat-Buff|cffffffff\n"..
-"This Control allows you to select, enable or disable the default Non-Combat-Buff.|r\n\n"..
-"|cffff0000Left-Click to show or hide Options|r\n"..
-"|cff999999(Execution-Order: System)|r\n\n"..
-"|cffff0000Right-Click to enable or disable the default Buff.|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"非战斗增益|cffffffff\n"..
+"此控制允许您选择、启用或禁用默认的非战斗增益。|r\n\n"..
+"|cffff0000左键单击以显示或隐藏选项|r\n"..
+"|cff999999(执行命令: 系统)|r\n\n"..
+"|cffff0000右键单击以启用或禁用默认增益。|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.hunter.naspect.rnature =
-"Resist-Nature-Buff|cffffffff\n"..
-"It enables the Resist-Nature-Buff as Non-Combat-Buff.|r\n\n"..
-"|cffff0000Left-Click to enable Resist-Nature-Buff|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"自然抗性增益|cffffffff\n"..
+"启用自然抗性增益作为非战斗增益。|r\n\n"..
+"|cffff0000左键单击以启用自然抗性增益|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.hunter.naspect.bmana =
-"Mana-Buff|cffffffff\n"..
-"It enables the Mana-Buff as Non-Combat-Buff.|r\n\n"..
-"|cffff0000Left-Click to enable Mana-Buff|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"法力增益|cffffffff\n"..
+"启用法力增益作为非战斗增益。|r\n\n"..
+"|cffff0000左键单击以启用法力增益|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.hunter.naspect.bdps =
-"DPS-Buff|cffffffff\n"..
-"It enables the DPS-Buff as Non-Combat-Buff.|r\n\n"..
-"|cffff0000Left-Click to enable DPS-Buff|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"伤害输出增益|cffffffff\n"..
+"启用伤害输出增益作为非战斗增益。|r\n\n"..
+"|cffff0000左键单击以启用伤害输出增益|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.hunter.caspect.master =
-"Combat-Buff|cffffffff\n"..
-"This Control allows you to select, enable or disable the default Combat-Buff.|r\n\n"..
-"|cffff0000Left-Click to show or hide Options|r\n"..
-"|cff999999(Execution-Order: System)|r\n\n"..
-"|cffff0000Right-Click to enable or disable the default Buff.|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"战斗增益|cffffffff\n"..
+"此控制允许您选择、启用或禁用默认的战斗增益。|r\n\n"..
+"|cffff0000左键单击以显示或隐藏选项|r\n"..
+"|cff999999(执行命令: 系统)|r\n\n"..
+"|cffff0000右键单击以启用或禁用默认增益。|r\n"..
+"|cff999999(行命令: 机器人)|r";
 
 MultiBot.tips.hunter.caspect.rnature =
-"Resist-Nature-Buff|cffffffff\n"..
-"It enables the Resist-Nature-Buff as Combat-Buff.|r\n\n"..
-"|cffff0000Left-Click to enable Resist-Nature-Buff|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"自然抗性增益|cffffffff\n"..
+"启用自然抗性增益作为非战斗增益。|r\n\n"..
+"|cffff0000左键单击以启用自然抗性增益|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.hunter.caspect.bmana =
-"Mana-Buff|cffffffff\n"..
-"It enables the Mana-Buff as Combat-Buff.|r\n\n"..
-"|cffff0000Left-Click to enable Mana-Buff|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"法力增益|cffffffff\n"..
+"它启用法力增益作为非战斗增益。|r\n\n"..
+"|cffff0000左键单击以启用法力增益|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.hunter.caspect.bdps =
-"DPS-Buff|cffffffff\n"..
-"It enables the DPS-Buff as Combat-Buff.|r\n\n"..
-"|cffff0000Left-Click to enable DPS-Buff|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"伤害输出增益|cffffffff\n"..
+"启用伤害输出增益作为非战斗增益。|r\n\n"..
+"|cffff0000左键单击以启用伤害输出增益|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.hunter.dps.master =
-"DPS-Control|cffffffff\n"..
-"In the DPS-Control you will find the general DPS-Strategies.|r\n\n"..
-"|cffff0000Left-Click to show or hide DPS-Control|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出控制|cffffffff\n"..
+"在伤害输出控制中你会找到通用的伤害输出策略。|r\n\n"..
+"|cffff0000左键点击显示或隐藏伤害输出控制|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.hunter.dps.dpsAssist =
-"DPS-Assist|cffffffff\n"..
-"It enables the DPS-Assist-Strategies.\n"..
-"DPS-AOE, DPS-Assist and Tank-Assist are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS-Assist|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出辅助|cffffffff\n"..
+"启用伤害输出辅助策略。\n"..
+"伤害输出范围攻击、伤害输出辅助和坦克辅助相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用伤害输出辅助|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.hunter.dps.dpsDebuff =
-"DPS-Debuff|cffffffff\n"..
-"It enables the Debuff-Strategies.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS-Debuff|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害增益|cffffffff\n"..
+"启用伤害增益。|r\n\n"..
+"|cffff0000左键点击启用伤害增益|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.hunter.dps.dpsAoe = 
-"DPS-AOE|cffffffff\n"..
-"It enables the DPS-AOE-Strategies.\n"..
-"DPS-AOE, DPS-Assist and Tank-Assist are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS-AOE|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出范围攻击|cffffffff\n"..
+"启用伤害输出范围攻击策略。\n"..
+"伤害输出范围攻击、伤害输出辅助和坦克辅助相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用伤害输出范围攻击|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.hunter.dps.dps = 
-"DPS|cffffffff\n"..
-"It enables the DPS-Strategies.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出|cffffffff\n"..
+"启用了伤害输出策略。|r\n\n"..
+"|cffff0000左键单击以启用或禁用伤害输出策略|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.hunter.tankAssist = 
-"Tank-Assist|cffffffff\n"..
-"It enables the Tank-Assist-Strategies.\n"..
-"DPS-AOE, DPS-Assist and Tank-Assist are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Tank-Assist|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"坦克辅助|cffffffff\n"..
+"启用坦克辅助策略。\n"..
+"伤害输出范围攻击、伤害输出辅助和坦克辅助相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用坦克辅助|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.addHunter = function(pFrame, pCombat, pNormal)
 	local tButton = pFrame.addButton("NonCombatAspect", 0, 0, "spell_nature_protectionformnature", MultiBot.tips.hunter.naspect.master)

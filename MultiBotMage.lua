@@ -4,102 +4,102 @@ MultiBot.tips.mage.buff = {}
 MultiBot.tips.mage.playbook = {}
 
 MultiBot.tips.mage.buff.master =
-"Buff-Control|cffffffff\n"..
-"This Control allows you to select, enable or disable the default Buff.|r\n\n"..
-"|cffff0000Left-Click to show or hide Options|r\n"..
-"|cff999999(Execution-Order: System)|r\n\n"..
-"|cffff0000Right-Click to enable or disable the default Buff.|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"增益控制|cffffffff\n"..
+"此控制允许你选择、启用或禁用默认增益。|r\n\n"..
+"|cffff0000左键点击以显示或隐藏选项|r\n"..
+"|cff999999(执行命令: 系统)|r\n\n"..
+"|cffff0000右键点击启用或禁用默认增益。|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.mage.buff.bmana =
-"Mana-Buff|cffffffff\n"..
-"It enables the Mana-Buff.|r\n\n"..
-"|cffff0000Left-Click to enable Mana-Buff|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"法力增益|cffffffff\n"..
+"启用法力增益。|r\n\n"..
+"|cffff0000左键点击以启用法力增益|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.mage.buff.bdps =
-"DPS-Buff|cffffffff\n"..
-"It enables the DPS-Buff.|r\n\n"..
-"|cffff0000Left-Click to enable DPS-Buff|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"伤害增益|cffffffff\n"..
+"启用伤害增益。|r\n\n"..
+"|cffff0000左键点击启用伤害增益|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.mage.playbook.master =
-"Playbook|cffffffff\n"..
-"In the Playbook you will find the Strategies typical for the Class.|r\n\n"..
-"|cffff0000Left-Click to show or hide Playbook|r\n"..
-"|cf9999999(Execution-Order: System)|r";
+"策略手册|cffffffff\n"..
+"在策略手册中你会找到该职业典型的策略。|r\n\n"..
+"|cffff0000左键点击显示或隐藏策略手册|r\n"..
+"|cf9999999(执行命令: 系统)|r";
 
 MultiBot.tips.mage.playbook.arcaneAoe =
-"Arcane-AOE|cffffffff\n"..
-"Allows the Mage to use Arcane-AOE-Spells during the Combat.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Arcane-AOE|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"奥术范围攻击|cffffffff\n"..
+"允许法师在战斗中使用奥术范围攻击法术。|r\n\n"..
+"|cffff0000左键点击启用或禁用奥术范围攻击|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.mage.playbook.arcane =
-"Arcane-Magic|cffffffff\n"..
-"Allows the Mage to use Arcane-Magic during the Combat.\n"..
-"Arcane-, Frost- and Fire-Magic are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Arcane-Magic|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"奥术魔法|cffffffff\n"..
+"允许法师在战斗中使用奥术魔法。\n"..
+"奥术、冰霜和火焰魔法相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用奥术魔法|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.mage.playbook.frostAoe =
-"Frost-AOE|cffffffff\n"..
-"Allows the Mage to use Frost-AOE-Spells during the Combat.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Arcane-AOE|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"冰霜范围攻击|cffffffff\n"..
+"允许法师在战斗中使用冰霜范围攻击法术。|r\n\n"..
+"|cffff0000左键点击启用或禁用奥术范围攻击|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.mage.playbook.frost =
-"Frost-Magic|cffffffff\n"..
-"Allows the Mage to use Frost-Magic during the Combat.\n"..
-"Arcane-, Frost- and Fire-Magic are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Frost-Magic|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"冰霜魔法|cffffffff\n"..
+"允许法师在战斗中使用冰霜魔法\n"..
+"奥术、冰霜和火焰魔法相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用冰霜魔法|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.mage.playbook.fireAoe =
-"Fire-AOE|cffffffff\n"..
-"Allows the Mage to use Fire-AOE-Spells during the Combat.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Fire-AOE|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"火焰范围攻击|cffffffff\n"..
+"允许法师在战斗中使用火焰范围攻击法术。|r\n\n"..
+"|cffff0000左键点击启用或禁用火焰范围攻击|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.mage.playbook.fire =
-"Fire-Magic|cffffffff\n"..
-"Allows the Mage to use Fire-Magic during the Combat.\n"..
-"Arcane-, Frost- and Fire-Magic are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Fire-Magic|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"火焰魔法|cffffffff\n"..
+"允许法师在战斗中使用火焰魔法。\n"..
+"奥术、冰霜和火焰魔法相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用火焰魔法|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.mage.dps.master =
-"DPS-Control|cffffffff\n"..
-"In the DPS-Control you will find the general DPS-Strategies.|r\n\n"..
-"|cffff0000Left-Click to show or hide DPS-Control|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出控制|cffffffff\n"..
+"在伤害输出控制中你会找到通用的伤害输出策略。|r\n\n"..
+"|cffff0000左键点击显示或隐藏伤害输出控制|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.mage.dps.dpsAssist =
-"DPS-Assist|cffffffff\n"..
-"It enables the DPS-Assist-Strategies.\n"..
-"DPS-AOE, DPS-Assist and Tank-Assist are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS-Assist|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出辅助|cffffffff\n"..
+"启用伤害输出辅助策略。\n"..
+"伤害输出范围攻击、伤害输出辅助和坦克辅助相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用伤害输出辅助|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.mage.dps.dpsAoe = 
-"DPS-AOE|cffffffff\n"..
-"It enables the DPS-AOE-Strategies.\n"..
-"DPS-AOE, DPS-Assist and Tank-Assist are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS-AOE|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出范围攻击|cffffffff\n"..
+"启用伤害输出范围攻击策略。\n"..
+"伤害输出范围攻击、伤害输出辅助和坦克辅助相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用伤害输出范围攻击|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.mage.tankAssist = 
-"Tank-Assist|cffffffff\n"..
-"It enables the Tank-Assist-Strategies.\n"..
-"DPS-AOE, DPS-Assist and Tank-Assist are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Tank-Assist|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"坦克辅助|cffffffff\n"..
+"启用坦克辅助策略。\n"..
+"伤害输出范围攻击、伤害输出辅助和坦克辅助相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用坦克辅助|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.addMage = function(pFrame, pCombat, pNormal)
 	local tButton = pFrame.addButton("Buff", 0, 0, "inv_elemental_primal_mana", MultiBot.tips.mage.buff.master)

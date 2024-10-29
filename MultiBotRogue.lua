@@ -2,40 +2,40 @@ MultiBot.tips.rogue = {}
 MultiBot.tips.rogue.dps = {}
 
 MultiBot.tips.rogue.dps.master =
-"DPS-Control|cffffffff\n"..
-"In the DPS-Control you will find the general DPS-Strategies.|r\n\n"..
-"|cffff0000Left-Click to show or hide DPS-Control|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"DPS控制|cffffffff\n"..
+"在DPS控制中，您可以找到通用的DPS策略。|r\n\n"..
+"|cffff0000左键单击以显示或隐藏DPS控制|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.rogue.dps.dpsAssist =
-"DPS-Assist|cffffffff\n"..
-"It enables the DPS-Assist-Strategies.\n"..
-"DPS-AOE, DPS-Assist and Tank-Assist are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS-Assist|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"DPS辅助|cffffffff\n"..
+"它启用了DPS辅助策略。\n"..
+"DPS-AOE、DPS辅助和坦克辅助是互斥的。\n"..
+"只能激活这些策略中的一个。|r\n\n"..
+"|cffff0000左键单击以启用或禁用DPS辅助|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.rogue.dps.dpsAoe = 
 "DPS-AOE|cffffffff\n"..
-"It enables the DPS-AOE-Strategies.\n"..
-"DPS-AOE, DPS-Assist and Tank-Assist are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS-AOE|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"它启用了DPS-AOE策略。\n"..
+"DPS-AOE、DPS辅助和坦克辅助是互斥的。\n"..
+"只能激活这些策略中的一个。|r\n\n"..
+"|cffff0000左键单击以启用或禁用DPS-AOE|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.rogue.dps.dps = 
 "DPS|cffffffff\n"..
-"It enables the DPS-Strategies.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"它启用了DPS策略。|r\n\n"..
+"|cffff0000左键单击以启用或禁用DPS|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.rogue.tankAssist = 
-"Tank-Assist|cffffffff\n"..
-"It enables the Tank-Assist-Strategies.\n"..
-"DPS-AOE, DPS-Assist and Tank-Assist are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Tank-Assist|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"坦克辅助|cffffffff\n"..
+"它启用了坦克辅助策略。\n"..
+"DPS-AOE、DPS辅助和坦克辅助是互斥的。\n"..
+"只能激活这些策略中的一个。|r\n\n"..
+"|cffff0000左键单击以启用或禁用坦克辅助|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.addRogue = function(pFrame, pCombat, pNormal)
 	pFrame.addButton("DpsControl", 0, 0, "ability_warrior_challange", MultiBot.tips.rogue.dps.master)

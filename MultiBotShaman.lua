@@ -5,122 +5,122 @@ MultiBot.tips.shaman.ctotem = {}
 MultiBot.tips.shaman.playbook = {}
 
 MultiBot.tips.shaman.heal =
-"Heal|cffffffff\n"..
-"It makes the Shaman to the Healer of the Group.\n"..
-"Caster, Melee and Heal are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Heal|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"治疗|cffffffff\n"..
+"它使萨满成为团队的治疗者。\n"..
+"施法者、近战和治疗相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用治疗|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.ntotem.master =
-"Non-Combat-Totem|cffffffff\n"..
-"This Control allows you to select, enable or disable the default Non-Combat-Totem.|r\n\n"..
-"|cffff0000Left-Click to show or hide Options|r\n"..
-"|cff999999(Execution-Order: System)|r\n\n"..
-"|cffff0000Right-Click to enable or disable the default Totem.|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"非战斗图腾|cffffffff\n"..
+"此控制允许你选择、启用或禁用默认非战斗图腾。|r\n\n"..
+"|cffff0000左键点击显示或隐藏选项 |r\n"..
+"|cff999999(执行命令: 系统)|r\n\n"..
+"|cffff0000右键点击启用或禁用默认图腾。|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.ntotem.bmana =
-"Mana-Totem|cffffffff\n"..
-"It enables the Mana-Totem as Non-Combat-Totem.|r\n\n"..
-"|cffff0000Left-Click to enable Mana-Totem|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"法力图腾|cffffffff\n"..
+"将法力图腾作为非战斗图腾启用。|r\n\n"..
+"|cffff0000左键点击启用法力图腾|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.ntotem.bdps =
-"DPS-Totem|cffffffff\n"..
-"It enables the DPS-Totem as Non-Combat-Totem.|r\n\n"..
-"|cffff0000Left-Click to enable DPS-Totem|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"伤害输出图腾|cffffffff\n"..
+"将伤害输出图腾作为非战斗图腾启用。|r\n\n"..
+"|cffff0000左键点击启用伤害输出图腾|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.ctotem.master =
-"Combat-Totem|cffffffff\n"..
-"This Control allows you to select, enable or disable the default Combat-Totem.|r\n\n"..
-"|cffff0000Left-Click to show or hide Options|r\n"..
-"|cff999999(Execution-Order: System)|r\n\n"..
-"|cffff0000Right-Click to enable or disable the default Totem.|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"战斗图腾|cffffffff\n"..
+"此控制允许你选择、启用或禁用默认战斗图腾。|r\n\n"..
+"|cffff0000左键点击显示或隐藏选项|r\n"..
+"|cff999999(执行命令: 系统)|r\n\n"..
+"|cffff0000右键点击启用或禁用默认图腾。|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.ctotem.bmana =
-"Mana-Totem|cffffffff\n"..
-"It enables the Mana-Totem as Combat-Totem.|r\n\n"..
-"|cffff0000Left-Click to enable Mana-Totem|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"法力图腾|cffffffff\n"..
+"将法力图腾作为战斗图腾启用。|r\n\n"..
+"|cffff0000左键点击启用法力图腾|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.ctotem.bdps =
-"DPS-Totem|cffffffff\n"..
-"It enables the DPS-Totem as Combat-Totem.|r\n\n"..
-"|cffff0000Left-Click to enable DPS-Totem|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"伤害输出图腾|cffffffff\n"..
+"将伤害输出图腾作为战斗图腾启用。|r\n\n"..
+"|cffff0000左键点击启用伤害输出图腾|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.playbook.master =
-"Playbook|cffffffff\n"..
-"In the Playbook you will find the Strategies typical for the Class.|r\n\n"..
-"|cffff0000Left-Click to show or hide Playbook|r\n"..
-"|cf9999999(Execution-Order: System)|r";
+"策略手册|cffffffff\n"..
+"在策略手册中你会找到该职业典型的策略。|r\n\n"..
+"|cffff0000左键点击显示或隐藏策略手册|r\n"..
+"|cf9999999(执行命令: 系统)|r";
 
 MultiBot.tips.shaman.playbook.totems =
-"Totems|cffffffff\n"..
-"Allows the Shaman to use Totems during the Combat.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Totems|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"图腾|cffffffff\n"..
+"允许萨满在战斗中使用图腾。|r\n\n"..
+"|cffff0000左键点击启用或禁用图腾|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.playbook.casterAoe =
-"Caster-AOE|cffffffff\n"..
-"Allows the Shaman to use AOE-Spells during the Combat.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Caster-AOE|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"施法者范围攻击|cffffffff\n"..
+"允许萨满在战斗中使用范围攻击法术。|r\n\n"..
+"|cffff0000左键点击启用或禁用施法者范围攻击|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.playbook.caster =
-"Caster|cffffffff\n"..
-"Allows the Shaman to use Spells during the Combat.\n"..
-"Caster, Melee and Heal are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Caster|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"施法者|cffffffff\n"..
+"允许萨满在战斗中使用法术。\n"..
+"施法者、近战和治疗相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用施法者|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.playbook.meleeAoe =
-"Melee-AOE|cffffffff\n"..
-"Allows the Shaman to use Melee-AOE-Attacks during the Combat.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Melee-AOE|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"近战范围攻击|cffffffff\n"..
+"允许萨满在战斗中使用近战范围攻击。|r\n\n"..
+"|cffff0000左键点击启用或禁用近战范围攻击|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.playbook.melee =
-"Melee|cffffffff\n"..
-"Allows the Shaman to use Melee-Attacks during the Combat.\n"..
-"Caster, Melee and Heal are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Caster|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"近战|cffffffff\n"..
+"允许萨满在战斗中使用近战攻击。\n"..
+"施法者、近战和治疗相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用近战攻击|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.dps.master =
-"DPS-Control|cffffffff\n"..
-"In the DPS-Control you will find the general DPS-Strategies.|r\n\n"..
-"|cffff0000Left-Click to show or hide DPS-Control|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出控制|cffffffff\n"..
+"在伤害输出控制中你会找到通用的伤害输出策略。|r\n\n"..
+"|cffff0000左键点击显示或隐藏伤害输出控制|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.dps.dpsAssist =
-"DPS-Assist|cffffffff\n"..
-"It enables the DPS-Assist-Strategies.\n"..
-"DPS-AOE, DPS-Assist and Tank-Assist are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS-Assist|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出辅助|cffffffff\n"..
+"启用伤害输出辅助策略。\n"..
+"伤害输出范围攻击、伤害输出辅助和坦克辅助相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用伤害输出辅助|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.dps.dpsAoe = 
-"DPS-AOE|cffffffff\n"..
-"It enables the DPS-AOE-Strategies.\n"..
-"DPS-AOE, DPS-Assist and Tank-Assist are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS-AOE|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出范围攻击|cffffffff\n"..
+"启用伤害输出范围攻击策略。\n"..
+"伤害输出范围攻击、伤害输出辅助和坦克辅助相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用伤害输出范围攻击|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.tankAssist = 
-"Tank-Assist|cffffffff\n"..
-"It enables the Tank-Assist-Strategies.\n"..
-"DPS-AOE, DPS-Assist and Tank-Assist are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Tank-Assist|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"坦克辅助|cffffffff\n"..
+"启用坦克辅助策略。\n"..
+"伤害输出范围攻击、伤害输出辅助和坦克辅助相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用坦克辅助|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.addShaman = function(pFrame, pCombat, pNormal)
 	pFrame.addButton("Heal", 0, 0, "spell_holy_aspiration", MultiBot.tips.priest.heal).setDisable()

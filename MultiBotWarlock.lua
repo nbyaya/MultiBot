@@ -3,82 +3,82 @@ MultiBot.tips.warlock.dps = {}
 MultiBot.tips.warlock.buff = {}
 
 MultiBot.tips.warlock.buff.master =
-"Buff|cffffffff\n"..
-"This Control allows you to select, enable or disable the default Buff.|r\n\n"..
-"|cffff0000Left-Click to show or hide Options|r\n"..
-"|cff999999(Execution-Order: System)|r\n\n"..
-"|cffff0000Right-Click to enable or disable the default Buff.|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"增益控制|cffffffff\n"..
+"此控制允许你选择、启用或禁用默认增益。|r\n\n"..
+"|cffff0000左键点击以显示或隐藏选项|r\n"..
+"|cff999999(执行命令: 系统)|r\n\n"..
+"|cffff0000右键点击启用或禁用默认增益。|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.warlock.buff.bhealth =
-"Health-Buff|cffffffff\n"..
-"It enables the Health-Buff.|r\n\n"..
-"|cffff0000Left-Click to enable Health-Buff|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"生命增益|cffffffff\n"..
+"启用生命增益。|r\n\n"..
+"|cffff0000左键点击启生命增益 |r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.warlock.buff.bmana =
-"Mana-Buff|cffffffff\n"..
-"It enables the Mana-Buff.|r\n\n"..
-"|cffff0000Left-Click to enable Mana-Buff|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"法力增益|cffffffff\n"..
+"启用法力增益。|r\n\n"..
+"|cffff0000左键点击启用法力增益|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.warlock.buff.bdps =
-"DPS-Buff|cffffffff\n"..
-"It enables the DPS-Buff.|r\n\n"..
-"|cffff0000Left-Click to enable DPS-Buff|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"伤害输出增益|cffffffff\n"..
+"启用伤害输出增益。|r\n\n"..
+"|cffff0000左键点击启用伤害输出增益|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.warlock.dps.master =
-"DPS-Control|cffffffff\n"..
-"In the DPS-Control you will find the general DPS-Strategies.|r\n\n"..
-"|cffff0000Left-Click to show or hide DPS-Control|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出控制|cffffffff\n"..
+"在伤害输出控制中你会找到通用的伤害输出策略。|r\n\n"..
+"|cffff0000左键点击显示或隐藏伤害输出控制|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.warlock.dps.dpsAssist =
-"DPS-Assist|cffffffff\n"..
-"It enables the DPS-Assist-Strategies.\n"..
-"DPS-AOE, DPS-Assist and Tank-Assist are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS-Assist|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出辅助|cffffffff\n"..
+"启用伤害输出辅助策略。\n"..
+"伤害输出范围攻击、伤害输出辅助和坦克辅助相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用伤害输出辅助|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.warlock.dps.dpsDebuff =
-"DPS-Debuff|cffffffff\n"..
-"It enables the DPS-Debuff-Strategies.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS-Debuff|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出减益|cffffffff\n"..
+"启用伤害输出减益策略。|r\n\n"..
+"|cffff0000左键点击启用或禁用伤害输出减益|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.warlock.dps.dpsAoe = 
-"DPS-AOE|cffffffff\n"..
-"It enables the DPS-AOE-Strategies.\n"..
-"DPS-AOE, DPS-Assist and Tank-Assist are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS-AOE|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出范围攻击|cffffffff\n"..
+"启用伤害输出范围攻击策略。\n"..
+"伤害输出范围攻击、伤害输出辅助和坦克辅助相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用伤害输出范围攻击|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.warlock.dps.dps = 
-"DPS|cffffffff\n"..
-"It enables the DPS-Strategies.\n"..
-"DPS and Tank are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出|cffffffff\n"..
+"启用伤害输出策略。\n"..
+"伤害输出和坦克相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用伤害输出|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.warlock.tankAssist = 
-"Tank-Assist|cffffffff\n"..
-"It enables the Tank-Assist-Strategies.\n"..
-"DPS-AOE, DPS-Assist and Tank-Assist are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Tank-Assist|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"坦克辅助|cffffffff\n"..
+"启用坦克辅助策略。\n"..
+"伤害输出范围攻击、伤害输出辅助和坦克辅助相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用坦克辅助|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.warlock.tank = 
-"Tank|cffffffff\n"..
-"It enables the Tank-Strategies.\n"..
-"DPS and Tank are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Tank|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"坦克|cffffffff\n"..
+"启用坦克策略。\n"..
+"伤害输出和坦克相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用坦克|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.addWarlock = function(pFrame, pCombat, pNormal)
 	local tButton = pFrame.addButton("Buff", 0, 0, "spell_shadow_lifedrain02", MultiBot.tips.warlock.buff.master)

@@ -3,86 +3,86 @@ MultiBot.tips.priest.dps = {}
 MultiBot.tips.priest.playbook = {}
 
 MultiBot.tips.priest.heal =
-"Heal|cffffffff\n"..
-"It makes the Priest to the Healer of the Group.\n"..
-"Shadow and Heal are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Heal|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"治疗|cffffffff\n"..
+"它使牧师成为团队的治疗者。\n"..
+"暗影和治疗相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用治疗|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.priest.buff =
-"Buff|cffffffff\n"..
-"It allows the Priest to Buff the Group.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Buff|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"增益|cffffffff\n"..
+"它允许牧师为团队施加增益。|r\n\n"..
+"|cffff0000左键点击启用或禁用增益|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.priest.playbook.master =
-"Playbook|cffffffff\n"..
-"In the Playbook you will find the Strategies typical for the Class.|r\n\n"..
-"|cffff0000Left-Click to show or hide Playbook|r\n"..
-"|cf9999999(Execution-Order: System)|r";
+"策略手册|cffffffff\n"..
+"在策略手册中你会找到该职业典型的策略。|r\n\n"..
+"|cffff0000左键点击显示或隐藏策略手册|r\n"..
+"|cf9999999(执行命令: 系统)|r";
 
 MultiBot.tips.priest.playbook.shadowDebuff =
-"Shadow-Debuff|cffffffff\n"..
-"Allows the Priest to use Shadow-Debuff-Spells during the Combat.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Shadow-Debuff|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"暗影减益|cffffffff\n"..
+"允许牧师在战斗中使用暗影减益法术。|r\n\n"..
+"|cffff0000左键点击启用或禁用暗影减益|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.priest.playbook.shadowAoe =
-"Shadow-AOE|cffffffff\n"..
-"Allows the Priest to use Shadow-AOE-Spells during the Combat.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Shadow-AOE-Debuff|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"暗影范围攻击|cffffffff\n"..
+"允许牧师在战斗中使用暗影范围攻击法术。|r\n\n"..
+"|cffff0000左键点击启用或禁用暗影范围攻击减益|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.priest.playbook.shadow =
-"Shadow|cffffffff\n"..
-"Allows the Priest to use Shadow-Spells during the Combat.\n"..
-"Shadow and Heal are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Shadow|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"暗影|cffffffff\n"..
+"允许牧师在战斗中使用暗影法术。\n"..
+"暗影和治疗相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用暗影|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.priest.dps.master =
-"DPS-Control|cffffffff\n"..
-"In the DPS-Control you will find the general DPS-Strategies.|r\n\n"..
-"|cffff0000Left-Click to show or hide DPS-Control|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出控制|cffffffff\n"..
+"在伤害输出控制中你会找到通用的伤害输出策略。|r\n\n"..
+"|cffff0000左键点击显示或隐藏伤害输出控制|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.priest.dps.dpsAssist =
-"DPS-Assist|cffffffff\n"..
-"It enables the DPS-Assist-Strategies.\n"..
-"DPS-AOE, DPS-Assist and Tank-Assist are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS-Assist|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出辅助|cffffffff\n"..
+"启用伤害输出辅助策略。\n"..
+"伤害输出范围攻击、伤害输出辅助和坦克辅助相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用伤害输出辅助|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.priest.dps.dpsDebuff =
-"DPS-Debuff|cffffffff\n"..
-"It enables the Debuff-Strategies.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS-Debuff|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出减益|cffffffff\n"..
+"启用减益策略。|r\n\n"..
+"|cffff0000左键点击启用或禁用伤害输出减益|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.priest.dps.dpsAoe = 
-"DPS-AOE|cffffffff\n"..
-"It enables the DPS-AOE-Strategies.\n"..
-"DPS-AOE, DPS-Assist and Tank-Assist are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS-AOE|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出范围攻击|cffffffff\n"..
+"启用伤害输出范围攻击策略。\n"..
+"伤害输出范围攻击、伤害输出辅助和坦克辅助相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用伤害输出范围攻击|r\n"..
+"|cf9999999(执行命令: 机器人)|r"
 
 MultiBot.tips.priest.dps.dps = 
-"DPS|cffffffff\n"..
-"It enables the DPS-Strategies.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出|cffffffff\n"..
+"启用了伤害输出策略。|r\n\n"..
+"|cffff0000左键单击以启用或禁用伤害输出策略|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.priest.tankAssist = 
-"Tank-Assist|cffffffff\n"..
-"It enables the Tank-Assist-Strategies.\n"..
-"DPS-AOE, DPS-Assist and Tank-Assist are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Tank-Assist|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"坦克辅助|cffffffff\n"..
+"启用坦克辅助策略。\n"..
+"伤害输出范围攻击、伤害输出辅助和坦克辅助相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用坦克辅助|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.addPriest = function(pFrame, pCombat, pNormal)
 	pFrame.addButton("Heal", 0, 0, "spell_holy_aspiration", MultiBot.tips.priest.heal).setDisable()

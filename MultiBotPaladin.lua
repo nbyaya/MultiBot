@@ -5,166 +5,166 @@ MultiBot.tips.paladin.naura = {}
 MultiBot.tips.paladin.caura = {}
 
 MultiBot.tips.paladin.heal =
-"Heal|cffffffff\n"..
-"It allows the Paladin to use Heal-Spells.\n"..
-"Tank, DPS and Heal are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Heal|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"治疗|cffffffff\n"..
+"它允许圣骑士使用治疗法术。\n"..
+"坦克、伤害输出和治疗相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用治疗|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.seal.master =
-"Seal-Control|cffffffff\n"..
-"This Control allows you to select, enable or disable the default Seal.|r\n\n"..
-"|cffff0000Left-Click to show or hide Options|r\n"..
-"|cff999999(Execution-Order: System)|r\n\n"..
-"|cffff0000Right-Click to enable or disable the default Seal.|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"圣印控制|cffffffff\n"..
+"此控制允许你选择、启用或禁用默认圣印。|r\n\n"..
+"|cffff0000左键点击显示或隐藏选项|r\n"..
+"|cff999999(执行命令: 系统)|r\n\n"..
+"|cffff0000右键点击启用或禁用默认圣印。|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.seal.bhealth =
-"Health-Seal|cffffffff\n"..
-"It enables the Health-Seal.|r\n\n"..
-"|cffff0000Left-Click to enable Health-Seal|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"生命圣印|cffffffff\n"..
+"“启用生命圣印。|r\n\n"..
+"|cffff0000左键点击启用生命圣印|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.seal.bmana =
-"Mana-Seal|cffffffff\n"..
-"It enables the Mana-Seal.|r\n\n"..
-"|cffff0000Left-Click to enable Mana-Seal|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"法力圣印|cffffffff\n"..
+"启用法力圣印。|r\n\n"..
+"|cffff0000左键点击启用法力圣印 |r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.seal.bstats =
-"Stats-Seal|cffffffff\n"..
-"It enables the Stats-Seal.|r\n\n"..
-"|cffff0000Left-Click to enable Stats-Seal|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"属性圣印|cffffffff\n"..
+"启用属性圣印。|r\n\n"..
+"|cffff0000左键点击启用属性圣印|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.seal.bdps =
-"DPS-Seal|cffffffff\n"..
-"It enables the DPS-Seal.|r\n\n"..
-"|cffff0000Left-Click to enable DPS-Seal|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"伤害输出圣印|cffffffff\n"..
+"启用伤害输出圣印。|r\n\n"..
+"|cffff0000左键点击启用伤害输出圣印|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.naura.master =
-"Non-Combat-Aura|cffffffff\n"..
-"This Control allows you to select, enable or disable the default Non-Combat-Arua.|r\n\n"..
-"|cffff0000Left-Click to show or hide Options|r\n"..
-"|cff999999(Execution-Order: System)|r\n\n"..
-"|cffff0000Right-Click to enable or disable the default Aura.|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"非战斗光环|cffffffff\n"..
+"此控制允许你选择、启用或禁用默认非战斗光环|r\n\n"..
+"|cffff0000左键点击显示或隐藏选项|r\n"..
+"|cff999999(执行命令: 系统)|r\n\n"..
+"|cffff0000右键点击启用或禁用默认光环。|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.naura.bspeed =
-"Speed-Aura|cffffffff\n"..
-"It enables the Speed-Aura as Non-Combat-Arua.|r\n\n"..
-"|cffff0000Left-Click to enable Speed-Aura|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"速度光环|cffffffff\n"..
+"将速度光环作为非战斗光环启用。|r\n\n"..
+"|cffff0000左键点击启用速度光环|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.naura.rfire =
-"Fire-Resist-Aura|cffffffff\n"..
-"It enables the Fire-Resist-Aura as Non-Combat-Arua.|r\n\n"..
-"|cffff0000Left-Click to enable Fire-Resist-Aura|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"火焰抗性光环|cffffffff\n"..
+"将火焰抗性光环作为非战斗光环启用。|r\n\n"..
+"|cffff0000左键点击启用火焰抗性光环|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.naura.rfrost =
-"Frost-Resist-Aura|cffffffff\n"..
-"It enables the Frost-Resist-Aura as Non-Combat-Arua.|r\n\n"..
-"|cffff0000Left-Click to enable Frost-Resist-Aura|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"冰霜抗性光环 |cffffffff\n"..
+"将冰霜抗性光环作为非战斗光环启用。|r\n\n"..
+"|cffff0000左键点击启用冰霜抗性光环 |r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.naura.rshadow =
-"Shadow-Resist-Aura|cffffffff\n"..
-"It enables the Shadow-Resist-Aura as Non-Combat-Arua.|r\n\n"..
-"|cffff0000Left-Click to enable Shadow-Resist-Aura|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"暗影抗性光环|cffffffff\n"..
+"将暗影抗性光环作为非战斗光环启用。|r\n\n"..
+"|cffff0000左键点击启用暗影抗性光环|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.naura.barmor =
-"Armor-Aura|cffffffff\n"..
-"It enables the Armor-Aura as Non-Combat-Arua.|r\n\n"..
-"|cffff0000Left-Click to enable Armor-Aura|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"护甲光环 |cffffffff\n"..
+"将护甲光环作为非战斗光环启用。|r\n\n"..
+"|cffff0000左键点击启用护甲光环|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.caura.master =
-"Combat-Aura|cffffffff\n"..
-"This Control allows you to select, enable or disable the default Combat-Arua.|r\n\n"..
-"|cffff0000Left-Click to show or hide Options|r\n"..
-"|cff999999(Execution-Order: System)|r\n\n"..
-"|cffff0000Right-Click to enable or disable the default Aura.|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"战斗光环|cffffffff\n"..
+"此控制允许你选择、启用或禁用默认战斗光环。|r\n\n"..
+"|cffff0000左键点击显示或隐藏选项|r\n"..
+"|cff999999(执行命令: 系统)|r\n\n"..
+"|cffff0000右键点击启用或禁用默认光环。|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.caura.bspeed =
-"Speed-Aura|cffffffff\n"..
-"It enables the Speed-Aura as Combat-Arua.|r\n\n"..
-"|cffff0000Left-Click to enable Speed-Aura|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"速度光环|cffffffff\n"..
+"将速度光环作为战斗光环启用。|r\n\n"..
+"|cffff0000左键点击启用速度光环|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.caura.rfire =
-"Fire-Resist-Aura|cffffffff\n"..
-"It enables the Fire-Resist-Aura as Combat-Arua.|r\n\n"..
-"|cffff0000Left-Click to enable Fire-Resist-Aura|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"火焰抗性光环|cffffffff\n"..
+"将火焰抗性光环作为战斗光环启用。|r\n\n"..
+"|cffff0000左键点击启用火焰抗性光环|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.caura.rfrost =
-"Frost-Resist-Aura|cffffffff\n"..
-"It enables the Frost-Resist-Aura as Combat-Arua.|r\n\n"..
-"|cffff0000Left-Click to enable Frost-Resist-Aura|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"冰霜抗性光环|cffffffff\n"..
+"将冰霜抗性光环作为战斗光环启用。|r\n\n"..
+"|cffff0000左键点击启用冰霜抗性光环|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.caura.rshadow =
-"Shadow-Resist-Aura|cffffffff\n"..
-"It enables the Shadow-Resist-Aura as Combat-Arua.|r\n\n"..
-"|cffff0000Left-Click to enable Shadow-Resist-Aura|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"暗影抗性光环|cffffffff\n"..
+"将暗影抗性光环作为战斗光环启用。|r\n\n"..
+"|cffff0000左键点击启用暗影抗性光环|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.caura.barmor =
-"Armor-Aura|cffffffff\n"..
-"It enables the Armor-Aura as Combat-Arua.|r\n\n"..
-"|cffff0000Left-Click to enable Armor-Aura|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"护甲光环|cffffffff\n"..
+"将护甲光环作为战斗光环启用。|r\n\n"..
+"|cffff0000左键点击启用护甲光环|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.dps.master =
-"DPS-Control|cffffffff\n"..
-"In the DPS-Control you will find the general DPS-Strategies.|r\n\n"..
-"|cffff0000Left-Click to show or hide DPS-Control|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出控制|cffffffff\n"..
+"在伤害输出控制中你会找到通用的伤害输出策略。|r\n\n"..
+"|cffff0000左键点击显示或隐藏伤害输出控制|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.dps.dpsAssist =
-"DPS-Assist|cffffffff\n"..
-"It enables the DPS-Assist-Strategies.\n"..
-"DPS-AOE, DPS-Assist and Tank-Assist are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS-Assist|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出辅助|cffffffff\n"..
+"启用伤害输出辅助策略。\n"..
+"伤害输出范围攻击、伤害输出辅助和坦克辅助相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用伤害输出辅助|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.dps.dpsAoe = 
-"DPS-AOE|cffffffff\n"..
-"It enables the DPS-AOE-Strategies.\n"..
-"DPS-AOE, DPS-Assist and Tank-Assist are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS-AOE|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出范围攻击|cffffffff\n"..
+"启用伤害输出范围攻击策略。\n"..
+"伤害输出范围攻击、伤害输出辅助和坦克辅助相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用伤害输出范围攻击|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.dps.dps = 
-"DPS|cffffffff\n"..
-"It enables the DPS-Strategies.\n"..
-"Tank, DPS and Heal are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable DPS|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"伤害输出|cffffffff\n"..
+"启用伤害输出策略。\n"..
+"“坦克、伤害输出和治疗相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用伤害输出|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.tankAssist = 
-"Tank-Assist|cffffffff\n"..
-"It enables the Tank-Assist-Strategies.\n"..
-"DPS-AOE, DPS-Assist and Tank-Assist are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Tank-Assist|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"坦克辅助|cffffffff\n"..
+"启用坦克辅助策略。\n"..
+"伤害输出范围攻击、伤害输出辅助和坦克辅助相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用坦克辅助|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.tank = 
-"Tank|cffffffff\n"..
-"It enables the Tank-Strategies.\n"..
-"Tank, DPS and Heal are mutually exclusive.\n"..
-"Only one of these Strategies can be activated.|r\n\n"..
-"|cffff0000Left-Click to enable or disable Tank-Assist|r\n"..
-"|cf9999999(Execution-Order: Bot)|r";
+"坦克|cffffffff\n"..
+"启用坦克策略。\n"..
+"坦克、伤害输出和治疗相互排斥。\n"..
+"只能激活这些策略中的一种。|r\n\n"..
+"|cffff0000左键点击启用或禁用坦克辅助|r\n"..
+"|cf9999999(执行命令: 机器人)|r";
 
 MultiBot.addPaladin = function(pFrame, pCombat, pNormal)
 	pFrame.addButton("Heal", 0, 0, "spell_holy_aspiration", MultiBot.tips.paladin.heal).setDisable()
