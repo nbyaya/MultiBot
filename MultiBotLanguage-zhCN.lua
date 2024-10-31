@@ -71,6 +71,12 @@ MultiBot.info.action =
 MultiBot.info.combination =
 "没有适合这种组合的物品。";
 
+--MultiBot.info.language =
+--"我需要先激活语言选择器。";
+
+MultiBot.info.reward =
+"选择奖励。";
+
 -- 移动 --
 
 MultiBot.tips.move.inventory =
@@ -629,6 +635,7 @@ MultiBot.tips.units.browse =
 "|cffff0000左键单击浏览团队|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
+
 MultiBot.tips.units.invite =
 "邀请控制\n|cffffffff"..
 "使用此控制可以自动填充你的队伍。\n"..
@@ -689,6 +696,18 @@ MultiBot.tips.main.coords =
 "|cffff0000左键单击重置坐标|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
+--[[
+MultiBot.tips.main.lang.master =
+"语言选择器|cffffffff\n"..
+"这个控制单元允许你为 MultiBot 选择语言。\n"..
+"当这个控制单元处于激活状态时，MultiBot 可以使用与客户端不同的语言。\n"..
+"执行命令显示命令的接收者。|r\n\n"..
+"|cffff0000左键点击以显示或隐藏选项|r\n"..
+"|cff999999(执行命令: 系统)|r\n\n"..
+"|cffff0000右键点击以开启或关闭语言选择器|r\n"..
+"|cff999999(执行命令: 系统)|r";
+]]--
+
 MultiBot.tips.main.release =
 "自动释放\n|cffffffff"..
 "此功能可以检测机器人的死亡。\n"..
@@ -708,7 +727,7 @@ MultiBot.tips.main.reward =
 "奖励选择器\n|cffffffff"..
 "此功能可视化奖励的选择。\n"..
 "我的建议是先为你的角色选择奖励。\n"..
-"这样在使用检查按钮时就不会有任何问题。\n"..
+"这样在使用检查按钮时就不会有任何问题。|r\n\n"..
 "重要提示：\n"..
 "一旦你的角色完成了任务，机器人也必须完成任务。\n"..
 "所以在你的角色获得奖励后，不要取消奖励选择器。\n\n"..

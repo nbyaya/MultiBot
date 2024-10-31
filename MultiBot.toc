@@ -4,7 +4,7 @@
 ## Title-zhCN: |r|cFF0099FF[PBot]|R机器人指挥中心
 ## Notes: User Interface for Playerbot
 ## Notes-zhCN: PlayerBots的玩家控制中心
-## Author: Nico Löbbert
+## Author: Nico Löbbert 汉化: leewheel 鸦鸦
 ## SavedVariables: MultiBotSave
 
 MultiBot.lua
