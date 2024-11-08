@@ -1000,11 +1000,11 @@ MultiBot.tips.inventory.drop =
 "|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.inventory.open =
-"Open-Items|cffffffff\n"..
-"This Button will open every Bag, Chest or Shell.\n"..
-"The Content will be put into the Inventory.|r\n\n"..
-"|cffff0000Left-Click to open a Bag, Chest or Shell|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"打开物品|cffffffff\n"..
+"此按钮将打开每个背包、箱子或贝壳。\n"..
+"东西将被放入物品栏中。|r\n\n"..
+"|cffff0000左键点击打开一个背包、箱子或贝壳|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 -- 等级过滤器 --
 
