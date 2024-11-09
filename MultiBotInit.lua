@@ -407,11 +407,6 @@ tButton.roster = "players"
 tButton.filter = "none"
 
 tButton.doRight = function(pButton)
-	--local tUnits = pButton.parent.frames["Units"]
-	--for key, value in pairs(tUnits.buttons) do value:Hide() end
-	--for key, value in pairs(tUnits.frames) do value:Hide() end
-	--tUnits.frames["Control"]:Hide()
-	
 	-- MEMBERBOTS --
 	
 	for i = 1, 50 do
@@ -479,30 +474,6 @@ tButton.doRight = function(pButton)
 			break
 		end
 	end
-	
-	--[[
-	-- REFRESH:RAID --
-	
-	if(GetNumRaidMembers() > 4) then
-		for i = 1, GetNumRaidMembers() do
-			local tName = UnitName("raid" .. i)
-			SendChatMessage(".playerbot bot add " .. tName, "SAY")
-		end
-		
-		return
-	end
-	
-	-- REFRESH:GROUP --
-	
-	if(GetNumPartyMembers() > 0) then
-		for i = 1, GetNumPartyMembers() do
-			local tName = UnitName("party" .. i)
-			SendChatMessage(".playerbot bot add " .. tName, "SAY")
-		end
-		
-		return
-	end
-	]]--
 	
 	pButton.doLeft(pButton, pButton.roster, pButton.filter)
 end
@@ -1142,7 +1113,7 @@ MultiBot.inventory.addButton("Destroy", -94, 694, "inv_hammer_15", MultiBot.tips
 	end
 end
 
-MultiBot.inventory.addButton("Open", -94, 657, "inv_misc_gift_05", MultiBot.tips.inventory.open)
+MultiBot.inventory.addButton("Open", -94, 322.5, "inv_misc_gift_05", MultiBot.tips.inventory.open)
 .doLeft = function(pButton)
 	SendChatMessage("open items", "WHISPER", nil, pButton.getName())
 end
@@ -1851,7 +1822,7 @@ MultiBot.reward:Hide()
 
 MultiBot.reward.doClose = function()
 	local tOverlay = MultiBot.reward.frames["Overlay"]
-	for i = 1, 12 do if(tOverlay.frames["U" .. MultiBot.IF(i < 10, "0", "") .. i]:IsVisible()) then return end end
+	for key, value in pairs(MultiBot.reward.units) do if(value.rewarded == false) then return end end
 	MultiBot.reward:Hide()
 end
 
