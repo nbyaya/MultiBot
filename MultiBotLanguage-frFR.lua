@@ -74,11 +74,14 @@ MultiBot.info.combination =
 --MultiBot.info.language =
 --"Je dois d'abord activer le sélecteur de langue.";
 
+MultiBot.info.rights =
+"Je n'ai pas les droits MJ.";
+
 MultiBot.info.reward =
 "Sélectionner les récompenses";
 
 MultiBot.info.shorts.bag =
-"Bag";
+"Sac";
 
 MultiBot.info.shorts.dur =
 "Dur";
@@ -818,7 +821,7 @@ MultiBot.tips.main.master =
 "L'Ordre d'exécution montre le destinataire des commandes.|r\n\n"..
 "|cffff0000Clic gauche pour afficher ou masquer les options|r\n"..
 "|cff999999(Ordre d'exécution : Système)|r\n\n"..
-"|cffff0000Clic droit pour fermer MultiBot|r\n"..
+"|cffff0000Clic droit pour faire glisser et déplacer MultiBot|r\n"..
 "|cff999999(Ordre d'exécution : Système)|r";
 
 MultiBot.tips.main.coords =
@@ -827,6 +830,30 @@ MultiBot.tips.main.coords =
 "MultiBar, Inventaire, Grimoire, Itemus, Iconos et Sélecteur de Récompense|r\n\n"..
 "|cffff0000Clic gauche pour réinitialiser les Coordonnées|r\n"..
 "|cff999999(Ordre d'exécution : Système)|r";
+
+MultiBot.tips.main.masters =
+"Switch Maitre du Jeu\n|cffffffff"..
+"Ce switch activera ou désactivera le contrôle MJ.\n"..
+"Vous devez avoir les droits MJ pour activer le contrôle.|r\n\n"..
+"|cffff0000Cliquez-gauche pour activer ou désactiver le contrôle MJ|r\n"..
+"|cff999999(Ordre d'exécution : Système)|r";
+
+MultiBot.tips.main.creator =
+"Switch Créateur\n|cffffffff"..
+"Ce switch activera ou désactivera le mode créateur de Bot.|r\n\n"..
+"|cffff0000Cliquez-gauche pour activer ou désactiver le mode créateur de Bot|r\n"..
+"|cff999999(Ordre d'exécution : Système)|r";
+
+MultiBot.tips.main.beast =
+"Switch Maître des Bêtes\n|cffffffff"..
+"Ce switch activera ou désactivera le contrôle Maître des Bêtes.\n"..
+"Le contrôle Maître des Bêtes gère le Module Maître des Bêtes d'Azerothcore.\n"..
+"Le Module Maître des Bêtes permet à chaque personnage d'avoir un familier comme les chasseurs.\n"..
+"Vos personnages peuvent apprendre les sorts nécessaires auprès de White Fang.\n"..
+"White Fang doit être placé dans le monde par l'Admin.|r\n\n"..
+"|cffff0000Cliquez-gauche pour activer ou désactiver le contrôle Maître des Bêtes|r\n"..
+"|cff999999(Ordre d'exécution : Système)|r";
+
 
 --[[ 
 MultiBot.tips.main.lang.master =
@@ -892,7 +919,7 @@ MultiBot.tips.game.master =
 "L'Ordre d'exécution montre le destinataire des commandes.|r\n\n"..
 "|cffff0000Clic gauche pour afficher ou masquer les options|r\n"..
 "|cff999999(Ordre d'exécution : Système)|r\n\n"..
-"|cffff0000Clic droit pour faire glisser et déplacer MultiBot|r\n"..
+"|cffff0000Clic droit pour fermer MultiBot|r\n"..
 "|cff999999(Ordre d'exécution : Système)|r";
 
 MultiBot.tips.game.necronet =
@@ -915,7 +942,7 @@ MultiBot.tips.game.portal =
 
 MultiBot.tips.game.memory =
 "Gemme de Mémoire\n|cffffffff"..
-"Cette Gemme de Mémoire sert à...\n"..
+"Cette Gemme de Mémoire ABOUT.\n"..
 "Vous avez besoin de droits de Maître de Jeu pour utiliser ce bouton.|r\n\n"..
 "|cffff0000Clic gauche pour stocker ou téléporter à l'emplacement|r\n"..
 "|cff999999(Ordre d'exécution : Vous-même)|r\n\n"..
