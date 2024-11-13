@@ -289,7 +289,7 @@ MultiBot:SetScript("OnEvent", function()
 	if(event == "CHAT_MSG_SYSTEM") then
 		if(MultiBot.isInside(arg1, "Accountlevel", "account level", "等级")) then
 			local tLevel = tonumber(MultiBot.doSplit(arg1, ": ")[2])
-			MultiBot.GM = tLevel > 1
+			if(tLevel ~= nil) then MultiBot.GM = tLevel > 1 end
 		end
 		
 		if(MultiBot.isInside(arg1, "Possible strategies")) then
