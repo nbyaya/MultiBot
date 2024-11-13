@@ -57,6 +57,12 @@ MultiBot.info.command =
 MultiBot.info.target =
 "I dont have a Target.";
 
+MultiBot.info.classes =
+"The Classes do not match.";
+
+MultiBot.info.levels =
+"The Levels do not match.";
+
 MultiBot.info.spell =
 "I couldnt identify the Spell.";
 
@@ -156,6 +162,9 @@ MultiBot.info.talent.OutOfRange =
 
 MultiBot.info.talent.Apply = 
 "Apply";
+
+MultiBot.info.talent.Copy = 
+"Copy";
 
 MultiBot.info.talent.Title =
 "Talents from NAME";
@@ -2467,3 +2476,5 @@ MultiBot.tips.every.talent =
 "It opens with a time delay while the system loads the talent values.|r\n\n",
 "|cffff0000Left-Click to open or close the Talents|r\n"..
 "|cff999999(Execution-Order: Bot)|r";
+
+MultiBot.GM = false
