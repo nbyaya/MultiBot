@@ -287,12 +287,7 @@ MultiBot:SetScript("OnEvent", function()
 	-- CHAT:SYSTEM --
 	
 	if(event == "CHAT_MSG_SYSTEM") then
-		if(MultiBot.isInside(arg1, "你帐号的等级为")) then
-			local tLevel = tonumber(MultiBot.doSplit(arg1, ": ")[2])
-			MultiBot.GM = tLevel > 1
-		end
-		
-		if(MultiBot.isInside(arg1, "Accountlevel", "account level")) then
+		if(MultiBot.isInside(arg1, "Accountlevel", "account level", "等级")) then
 			local tLevel = tonumber(MultiBot.doSplit(arg1, ": ")[2])
 			MultiBot.GM = tLevel > 1
 		end
