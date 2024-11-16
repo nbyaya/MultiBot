@@ -654,8 +654,10 @@ MultiBot:SetScript("OnEvent", function()
 			MultiBot.addEvery(tFrame, tButton.combat, tButton.normal)
 			
 			if(MultiBot.index.classes.actives[tButton.class] == nil) then MultiBot.index.classes.actives[tButton.class] = {} end
-			table.insert(MultiBot.index.classes.actives[tButton.class], tButton.name)
-			table.insert(MultiBot.index.actives, tButton.name)
+			if(MultiBot.isActive(tButton.name) == false) then
+				table.insert(MultiBot.index.classes.actives[tButton.class], tButton.name)
+				table.insert(MultiBot.index.actives, tButton.name)
+			end
 			
 			tButton.setEnable()
 			return
@@ -766,7 +768,7 @@ MultiBot:SetScript("OnEvent", function()
 		if(MultiBot.inventory:IsVisible()) then
 			local tButton = nil
 			
-			if( MultiBot.isInside(arg1, "获得了物品")) then
+			if(MultiBot.isInside(arg1, "获得了物品")) then
 				local tName = MultiBot.doReplace(MultiBot.doSplit(arg1, ":")[1], "获得了物品", "")
 				tButton = MultiBot.frames["MultiBar"].frames["Units"].buttons[tName]
 			end

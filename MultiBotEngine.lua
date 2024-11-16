@@ -85,6 +85,11 @@ MultiBot.doRepos = function(pIndex, pOffsetX)
 	return true
 end
 
+MultiBot.isActive = function(pName)
+	for key, value in pairs(MultiBot.index.actives) do if(value == pName) then return true end end
+	return false
+end
+
 MultiBot.isInside = function(pString, p1stPattern, o2ndPattern, o3rdPattern, o4thPattern, o5thPattern, o6thPattern, o7thPattern, o8thPattern, o9thPattern)
 	if(p1stPattern ~= nil and string.find(pString, p1stPattern)) then return true end
 	if(o2ndPattern ~= nil and string.find(pString, o2ndPattern)) then return true end
@@ -216,7 +221,7 @@ MultiBot.toPoint = function(pFrame)
 end
 
 MultiBot.SavePortal = function(pButton)
-	local tSave = pButton.goMap
+	local tSave = MultiBot.IF(pButton.goMap == nil, "", pButton.goMap)
 	tSave = tSave .. ";" .. (math.ceil(pButton.goX * 1000) / 1000)
 	tSave = tSave .. ";" .. (math.ceil(pButton.goY * 1000) / 1000)
 	tSave = tSave .. ";" .. (math.ceil(pButton.goZ * 1000) / 1000)
