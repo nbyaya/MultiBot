@@ -25,8 +25,9 @@ MultiBot:SetScript("OnUpdate", function(pSelf, pElapsed)
 			MultiBot.timer.invite.needs = MultiBot.timer.invite.needs - 1
 		end
 		
-		if(MultiBot.timer.invite.needs == 0 or tIndex == table.getn(tTable)) then
-			MultiBot.timer.invite.rooster = ""
+		if(MultiBot.timer.invite.needs == 0 or MultiBot.timer.invite.index  == table.getn(tTable)) then
+			MultiBot.timer.invite.elapsed = 0
+			MultiBot.timer.invite.roster = ""
 			MultiBot.timer.invite.index = 1
 			MultiBot.timer.invite.needs = 0
 			MultiBot.auto.invite = false
@@ -287,7 +288,7 @@ MultiBot:SetScript("OnEvent", function()
 	-- CHAT:SYSTEM --
 	
 	if(event == "CHAT_MSG_SYSTEM") then
-		if(MultiBot.isInside(arg1, "Accountlevel", "account level", "等级")) then
+		if(MultiBot.isInside(arg1, "Accountlevel", "account level", "niveau de compte", "等级")) then
 			local tLevel = tonumber(MultiBot.doSplit(arg1, ": ")[2])
 			if(tLevel ~= nil) then MultiBot.GM = tLevel > 1 end
 		end
@@ -639,6 +640,16 @@ MultiBot:SetScript("OnEvent", function()
 		
 		if(MultiBot.isInside(arg1, "Goodbye", "再见")) then
 			--MultiBot.doRaid()
+			return
+		end
+		
+		if(MultiBot.isInside(arg1, "reset to default") and tButton.waitFor == "CO") then
+			SendChatMessage("co ,?", "WHISPER", nil, arg2)
+			return
+		end
+		
+		if(MultiBot.isInside(arg1, "reset to default") and tButton.waitFor == "NC") then
+			SendChatMessage("nc ,?", "WHISPER", nil, arg2)
 			return
 		end
 		
