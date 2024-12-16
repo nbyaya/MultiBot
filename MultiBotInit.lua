@@ -682,8 +682,15 @@ end
 
 local tButton = tControl.addButton("Invite", 0, 60, "Interface\\AddOns\\MultiBot\\Icons\\invite.blp", MultiBot.tips.units.invite).setEnable()
 tButton.doRight = function(pButton)
-	if(GetNumRaidMembers() > 0 or GetNumPartyMembers() > 0) then return SendChatMessage(".playerbot bot remove *", "SAY") end
-	SendChatMessage(MultiBot.info.group, "SAY")
+	if(GetNumRaidMembers() > 0 or GetNumPartyMembers() > 0) then
+		return SendChatMessage(".playerbot bot remove *", "SAY")
+	else
+		MultiBot.timer.invite.roster = MultiBot.frames["MultiBar"].buttons["Units"].roster
+		MultiBot.timer.invite.needs = table.getn(MultiBot.index[MultiBot.timer.invite.roster])
+		MultiBot.timer.invite.index = 1
+		MultiBot.auto.invite = true
+		SendChatMessage(MultiBot.info.starting, "SAY")
+	end
 end
 tButton.doLeft = function(pButton)
 	if(pButton.state) then MultiBot.ShowHideSwitch(pButton.parent.frames["Invite"]) end
@@ -698,7 +705,7 @@ tInvite.addButton("Party+5", 0, 0, "Interface\\AddOns\\MultiBot\\Icons\\invite_p
 	local tRaid = GetNumRaidMembers()
 	local tParty = GetNumPartyMembers()
 	MultiBot.timer.invite.roster = MultiBot.frames["MultiBar"].buttons["Units"].roster
-	MultiBot.timer.invite.needs = 5 - MultiBot.IF(tRaid > 0, tRaid, MultiBot.IF(tParty > 0, tParty + 1, 1))
+	MultiBot.timer.invite.needs = MultiBot.IF(tRaid > 0, 5 - tRaid, MultiBot.IF(tParty > 0, 4 - tParty, 4))
 	MultiBot.timer.invite.index = 1
 	MultiBot.auto.invite = true
 	pButton.parent:Hide()
