@@ -5,7 +5,6 @@
 ## Notes: User Interface for Playerbot
 ## Notes-zhCN: PlayerBots的玩家控制中心
 ## Author: Nico Löbbert 汉化: leewheel 鸦鸦
-## SavedVariables: MultiBotSave
 
 MultiBot.lua
 MultiBotLanguage-deDE.lua
