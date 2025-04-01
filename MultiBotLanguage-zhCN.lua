@@ -889,10 +889,10 @@ MultiBot.tips.main.lang.master =
 ]]--
 
 MultiBot.tips.main.expand =
-"Expand-Switch\n|cffffffff"..
-"This Switch will expand or reduce the Stay-Follow-Control.\n"..
-"|cffff0000Left-Click to expand or reduce the Stay-Follow-Control|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"展开 - 开关\n|cffffffff"..
+"此开关将展开或缩小‘保持跟随控制’。\n"..
+"|cffff0000左键单击以展开或缩小‘保持跟随控制’|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.main.release =
 "自动释放\n|cffffffff"..
@@ -1891,10 +1891,10 @@ MultiBot.tips.paladin.naura.barmor =
 "|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.naura.bcast =
-"Concentration-Aura|cffffffff\n"..
-"It enables the Concentration-Aura as Non-Combat-Aura.|r\n\n"..
-"|cffff0000Left-Click to enable Armor-Aura|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"专注光环|cffffffff\n"..
+"该功能将专注光环设置为非战斗状态常驻光环。|r\n\n"..
+"|cffff0000左键点击启用护甲光环|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.caura.master =
 "战斗光环|cffffffff\n"..
@@ -1941,10 +1941,10 @@ MultiBot.tips.paladin.caura.barmor =
 "|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.caura.bcast =
-"Concentration-Aura|cffffffff\n"..
-"It enables the Concentration-Aura as Combat-Aura.|r\n\n"..
-"|cffff0000Left-Click to enable Concentration-Aura|r\n"..
-"|cff999999(Execution-Order: Bot)|r";
+"专注光环|cffffffff\n"..
+"该功能将专注光环设置为战斗状态光环。|r\n\n"..
+"|cffff0000左键单击以启用专注光环|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.dps.master =
 "DPS控制|cffffffff\n"..
