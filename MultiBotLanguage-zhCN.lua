@@ -232,7 +232,7 @@ MultiBot.tips.move.talent =
 "右键点击并拖动以移动天赋";
 
 MultiBot.tips.move.raidus =
-"Right-Click to drag and move the Raidus";
+"右键单击以拖动并移动团队编排器";
 
 -- 坦克 --
 
@@ -864,10 +864,10 @@ MultiBot.tips.main.rtsc =
 "|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.main.raidus =
-"Raidus-Switch\n|cffffffff"..
-"This Switch will open or close the Raid-Composer.|r\n\n"..
-"|cffff0000Left-Click to open or close the Raid-Composer|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"团队编排器开关\n|cffffffff"..
+"此开关可打开或关闭团队编排器。|r\n\n"..
+"|cffff0000左键单击可打开或关闭团队编排器|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.main.creator =
 "创造者切换\n|cffffffff"..
