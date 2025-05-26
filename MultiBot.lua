@@ -907,6 +907,17 @@ MultiBot.tips.units.inviteRaid40 =
 "|cffff0000Left-Click to invite Raid-Members|r\n"..
 "|cff999999(Execution-Order: System)|r";
 
+-- UNITS:ALL --
+
+MultiBot.tips.units.alliance = 
+"Alliance\n|cffffffff"..
+"With this Button you can bring all you Group-Members online or offline.\n"..
+"Maybe MultiBot wont be able to react fast enough and will not show all Botbars.\n\n"..
+"|cffff0000Left-Click to bring all Group-Members online|r\n"..
+"|cff999999(Execution-Order: System)|r\n\n"..
+"|cffff0000Right-Click to bring all Group-Members offline|r\n"..
+"|cff999999(Execution-Order: System)|r";
+
 -- MAIN --
 
 MultiBot.tips.main = {}
@@ -1123,6 +1134,12 @@ MultiBot.tips.quests.master =
 "|cff999999(Execution-Order: System)|r\n\n"..
 "|cffff0000Right-Click to refresh the Options|r\n"..
 "|cff999999(Execution-Order: System)|r";
+
+MultiBot.tips.quests.accept =
+"Quest-Accpet\n|cffffffff"..
+"This Button orders Bots to take every Quest of the targeted NPC.\n\n"..
+"|cffff0000Left-Click to take every Quest|r\n"..
+"|cff999999(Execution-Order: Raid, Party)|r";
 
 -- DRINK --
 

@@ -499,6 +499,7 @@ tButton.doLeft = function(pButton, oRoster, oFilter)
 	
 	for key, value in pairs(tUnits.buttons) do value:Hide() end
 	for key, value in pairs(tUnits.frames) do value:Hide() end
+	tUnits.frames["Alliance"]:Show()
 	tUnits.frames["Control"]:Show()
 	
 	if(oRoster == nil and oFilter == nil) then MultiBot.ShowHideSwitch(tUnits)
@@ -814,6 +815,19 @@ tControl.addButton("Browse", 0, 90, "Interface\\AddOns\\MultiBot\\Icons\\browse.
 	tMaster.to = tTo
 	
 	tUnits.frames["Control"].setPoint(-2, (tUnits.size + 2) * tIndex)
+end
+
+-- UNITS:ALL --
+
+local tAlliance = tUnits.addFrame("Alliance", -2, -68)
+tAlliance:Show()
+
+local tButton = tAlliance.addButton("Alliance", 0, 0, "inv_misc_tournaments_banner_human", MultiBot.tips.units.alliance).doShow()
+tButton.doRight = function(pButton)
+	SendChatMessage(".playerbot bot remove *", "SAY");
+end
+tButton.doLeft = function(pButton)
+	SendChatMessage(".playerbot bot add *", "SAY");
 end
 
 -- MAIN --
@@ -1279,6 +1293,14 @@ end
 
 local tQuests = tRight.addFrame("Quests", -2, 34)
 tQuests:Hide()
+
+local tAccpet = tQuests.addFrame("Accept", 0, -64, 28)
+tAccpet:Show()
+
+tAccpet.addButton("Accept", 0, 0, "inv_misc_note_02", MultiBot.tips.quests.accept)
+.doLeft = function(pButton)
+	MultiBot.ActionToGroup("accept *")
+end
 
 -- DRINK --
 

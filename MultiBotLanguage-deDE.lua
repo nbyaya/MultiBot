@@ -832,6 +832,17 @@ MultiBot.tips.units.inviteRaid40 =
 "|cffff0000Linksklicken um Raid-Mitglieder einzuladen|r\n"..
 "|cff999999(Ausführreihenfolge: System)|r";
 
+-- UNITS:ALL --
+
+MultiBot.tips.units.alliance = 
+"Alliance\n|cffffffff"..
+"Mit dieser Schaltfläche bringt Ihr alle Gruppenmitglieder online oder offline.\n"..
+"Möglicherweise kommt MultiBot mit der Geschwindigkeit nicht klar und verschluckt einige Botbars.\n\n"..
+"|cffff0000Linksklicken um die Gruppenmitglieder online zu bringen|r\n"..
+"|cff999999(Ausführreihenfolge: System)|r\n\n"..
+"|cffff0000Rechtsklicken um die Gruppenmitglieder offlien zu bringen|r\n"..
+"|cff999999(Ausführreihenfolge: System)|r";
+
 -- MAIN --
 
 MultiBot.tips.main.master =
@@ -1026,6 +1037,12 @@ MultiBot.tips.quests.master =
 "|cff999999(Ausführreihenfolge: System)|r\n\n"..
 "|cffff0000Rechtsklicken um die Optionen zu aktualisieren|r\n"..
 "|cff999999(Ausführreihenfolge: System)|r";
+
+MultiBot.tips.quests.accept =
+"Quest-Accpet\n|cffffffff"..
+"Diese Schalter fordert die Bots auf die Quest des anvisierten NPCs anzunehmen.\n\n"..
+"|cffff0000Linksklicken um Quests anzunehmen|r\n"..
+"|cff999999(Ausführreihenfolge: Raid, Party)|r";
 
 -- DRINK --
 
