@@ -835,13 +835,13 @@ MultiBot.tips.units.inviteRaid40 =
 -- UNITS:ALL --
 
 MultiBot.tips.units.alliance = 
-"Alliance\n|cffffffff"..
-"With this Button you can bring all you Group-Members online or offline.\n"..
-"Maybe MultiBot wont be able to react fast enough and will not show all Botbars.\n\n"..
-"|cffff0000Left-Click to bring all Group-Members online|r\n"..
-"|cff999999(Execution-Order: System)|r\n\n"..
-"|cffff0000Right-Click to bring all Group-Members offline|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"同盟\n|cffffffff"..
+"通过此按钮，您可以将所有组队成员上线或下线。\n"..
+"MultiBot可能无法立即响应，导致部分机器人控制条未能及时显示。\n\n"..
+"|cffff0000左键点击：使所有组队成员上线|r\n"..
+"|cff999999(执行命令: 系统)|r\n\n"..
+"|cffff0000右键点击：使所有组队成员下线|r\n"..
+"|cff999999(执行命令: 系统)|r";
 
 -- 主菜单 --
 
@@ -1039,10 +1039,10 @@ MultiBot.tips.quests.master =
 "|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.quests.accept =
-"Quest-Accpet\n|cffffffff"..
-"This Button orders Bots to take every Quest of the targeted NPC.\n\n"..
-"|cffff0000Left-Click to take every Quest|r\n"..
-"|cff999999(Execution-Order: Raid, Party)|r";
+"任务接受\n|cffffffff"..
+"此按钮可命令机器人接受目标NPC提供的所有任务。\n\n"..
+"|cffff0000左键点击：接受所有任务|r\n"..
+"|cff999999(执行命令: 团队, 队伍)|r";
 
 -- 饮用 --
 
