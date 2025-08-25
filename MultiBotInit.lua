@@ -548,8 +548,23 @@ tButton.doLeft = function(pButton, oRoster, oFilter)
 	end
 end
 
-local tUnits = tMultiBar.addFrame("Units", -40, 38)
+local tUnits = tMultiBar.addFrame("Units", -40, 72)
 tUnits:Hide()
+
+-- UNITS:ALLIANCE --
+
+local tAlliance = tUnits.addFrame("Alliance", 0, -34, 32)
+tAlliance:Show()
+
+local tButton = tAlliance.addButton("Alliance", 0, 0, "inv_misc_tournaments_banner_human", MultiBot.tips.units.alliance).doShow()
+tButton.doRight = function(pButton)
+	SendChatMessage(".playerbot bot remove *", "SAY");
+end
+tButton.doLeft = function(pButton)
+	SendChatMessage(".playerbot bot add *", "SAY");
+end
+
+-- UNITS:CONTROL --
 
 local tControl = tUnits.addFrame("Control", -2, 0)
 tControl:Show()
@@ -815,19 +830,6 @@ tControl.addButton("Browse", 0, 90, "Interface\\AddOns\\MultiBot\\Icons\\browse.
 	tMaster.to = tTo
 	
 	tUnits.frames["Control"].setPoint(-2, (tUnits.size + 2) * tIndex)
-end
-
--- UNITS:ALL --
-
-local tAlliance = tUnits.addFrame("Alliance", -2, -68)
-tAlliance:Show()
-
-local tButton = tAlliance.addButton("Alliance", 0, 0, "inv_misc_tournaments_banner_human", MultiBot.tips.units.alliance).doShow()
-tButton.doRight = function(pButton)
-	SendChatMessage(".playerbot bot remove *", "SAY");
-end
-tButton.doLeft = function(pButton)
-	SendChatMessage(".playerbot bot add *", "SAY");
 end
 
 -- MAIN --
@@ -1186,7 +1188,8 @@ local tButton = tRight.addButton("Quests", 0, 0, "inv_misc_book_07", MultiBot.ti
 tButton.doRight = function(pButton)
 	local tEntries, tQuests = GetNumQuestLogEntries()
 	local tFrame = pButton.parent.frames["Quests"]
-	local tIndex = 1
+	local tIndex = 0
+	local tShow = 1
 	
 	for key, value in pairs(tFrame.buttons) do value:Hide() end
 	for key, value in pairs(tFrame.texts) do value:Hide() end
@@ -1237,7 +1240,7 @@ tButton.doRight = function(pButton)
 			tFrame.limit = tFrame.limit + 1
 			
 			local tAmount = 0
-			local tButton = tFrame.addButton("Quest" .. tFrame.limit, 0, (tIndex - 1) * 30, "inv_misc_note_01", tLink)
+			local tButton = tFrame.addButton("Quest" .. tFrame.limit, 0, tIndex * 30, "inv_misc_note_01", tLink)
 			tButton.link = tLink
 			tButton.id = i
 			
@@ -1268,16 +1271,17 @@ tButton.doRight = function(pButton)
 				end
 			end
 			
-			local tText = tFrame.addText("Title" .. tFrame.limit, "[" .. tAmount .. "] " .. tTitle, "BOTTOMLEFT", 30, (tIndex - 1) * 30 + 14, 12)
+			local tText = tFrame.addText("Title" .. tFrame.limit, "[" .. tAmount .. "] " .. tTitle, "BOTTOMLEFT", 30, tIndex * 30 + 14, 12)
 			
-			if(tIndex < tFrame.from or tIndex > tFrame.to) then
-				tButton:Hide()
-				tText:Hide()
-			else
+			if(tShow >= tFrame.from and tShow <= tFrame.to) then
 				tButton:Show()
 				tText:Show()
+			else
+				tButton:Hide()
+				tText:Hide()
 			end
 			
+			tShow = tShow + 1
 			tIndex = (tIndex + 1)%10
 		end
 	end
@@ -1291,10 +1295,10 @@ tButton.doLeft = function(pButton)
 	if(MultiBot.ShowHideSwitch(pButton.parent.frames["Quests"])) then pButton.doRight(pButton) end
 end
 
-local tQuests = tRight.addFrame("Quests", -2, 34)
+local tQuests = tRight.addFrame("Quests", -2, 64)
 tQuests:Hide()
 
-local tAccpet = tQuests.addFrame("Accept", 0, -64, 28)
+local tAccpet = tQuests.addFrame("Accept", 0, -30, 28)
 tAccpet:Show()
 
 tAccpet.addButton("Accept", 0, 0, "inv_misc_note_02", MultiBot.tips.quests.accept)
@@ -1935,7 +1939,7 @@ tOverlay.wowButton("<", -159, 309, 15, 18, 13)
 	local tIndex = 1
 	
 	for i = MultiBot.spellbook.from, MultiBot.spellbook.to do
-		MultiBot.setSpell(tIndex, MultiBot.spellbook.spells[i], MultiBot.spells[pButton.getName()][MultiBot.spellbook.spells[i][1]])
+		MultiBot.setSpell(tIndex, MultiBot.spellbook.spells[i], pButton.getName())
 		tIndex = tIndex + 1
 	end
 end
@@ -1952,7 +1956,7 @@ tOverlay.wowButton(">", -59, 309, 15, 18, 11)
 	local tIndex = 1
 	
 	for i = MultiBot.spellbook.from, MultiBot.spellbook.to do
-		MultiBot.setSpell(tIndex, MultiBot.spellbook.spells[i], MultiBot.spells[pButton.getName()][MultiBot.spellbook.spells[i][1]])
+		MultiBot.setSpell(tIndex, MultiBot.spellbook.spells[i], pButton.getName())
 		tIndex = tIndex + 1
 	end
 end
@@ -2636,8 +2640,24 @@ tTab.wowButton("Glyphs", -2, 6, 92, 17, 11)
 end
 ]]--
 
+MultiBot.talent.setGrid = function(pTab)
+	pTab.grid = {}
+	pTab.grid.icons = {}
+	pTab.grid.icons.size = pTab.size + 8
+	pTab.grid.icons.x = pTab.width / 2 + pTab.grid.icons.size * 2 + 4
+	pTab.grid.icons.y = pTab.height / 2 + pTab.grid.icons.size * 5.5 + 4
+	pTab.grid.arrows = {}
+	pTab.grid.arrows.size = pTab.grid.icons.size + 8
+	pTab.grid.arrows.x = pTab.width / 2 + pTab.grid.icons.size * 2 - 4
+	pTab.grid.arrows.y = pTab.height / 2 + pTab.grid.icons.size * 5.5 - 4
+	pTab.grid.values = {}
+	pTab.grid.values.x = pTab.width / 2 + pTab.grid.icons.size * 2
+	pTab.grid.values.y = pTab.height / 2 + pTab.grid.icons.size * 5.5
+	return pTab
+end
+
 MultiBot.talent.addArrow = function(pTab, pID, pNeeds, piX, piY, pTexture)
-	local tArrow = pTab.addFrame("Arrow" .. pID, piX * 36 - 153, 395 - piY * 36, 44)
+	local tArrow = pTab.addFrame("Arrow" .. pID, piX * pTab.grid.icons.size - pTab.grid.arrows.x, pTab.grid.arrows.y - piY * pTab.grid.icons.size, pTab.grid.arrows.size)
 	tArrow.addTexture("Interface\\AddOns\\MultiBot\\Textures\\Talent_Silver_" .. pTexture .. ".blp")
 	tArrow.active = "Interface\\AddOns\\MultiBot\\Textures\\Talent_Gold_" .. pTexture .. ".blp"
 	tArrow.needs = pNeeds
@@ -2646,7 +2666,7 @@ MultiBot.talent.addArrow = function(pTab, pID, pNeeds, piX, piY, pTexture)
 end
 
 MultiBot.talent.addTalent = function(pTab, pID, pNeeds, pValue, pMax, piX, piY, pTexture, pTips)
-	local tTalent = pTab.addButton(pID, piX * 36 - 161, 403 - piY * 36, pTexture, pTips[pValue + 1])
+	local tTalent = pTab.addButton(pID, piX * pTab.grid.icons.size - pTab.grid.icons.x, pTab.grid.icons.y - piY * pTab.grid.icons.size, pTexture, pTips[pValue + 1])
 	tTalent.points = piY * 5 - 5
 	tTalent.needs = pNeeds
 	tTalent.value = pValue
@@ -2699,7 +2719,7 @@ end
 
 MultiBot.talent.addValue = function(pTab, pID, piX, piY, pRank, pMax)
 	local tColor = MultiBot.IF(pRank > 0, MultiBot.IF(pRank < pMax, "|cff4db24d", "|cffffcc00"), "|cffffffff")
-	local tValue = pTab.addFrame(pID, piX * 36 - 157, 399 - piY * 36, 24, 18, 12)
+	local tValue = pTab.addFrame(pID, piX * pTab.grid.icons.size - pTab.grid.values.x, pTab.grid.values.y - piY * pTab.grid.icons.size, 24, 18, 12)
 	tValue.addTexture("Interface\\AddOns\\MultiBot\\Textures\\Talent_Black.blp")
 	tValue.addText("Value", tColor .. pRank .. "/" .. pMax .. "|r", "CENTER", -0.5, 1, 10)
 	if(MultiBot.talent.points == 0 and pRank == 0) then tValue:Hide() end
@@ -2717,7 +2737,7 @@ MultiBot.talent.setTalents = function()
 	
 	for i = 1, 3 do
 		local tMarker = MultiBot.talent.class .. i
-		local tTab = MultiBot.talent.frames["Tab" .. i]
+		local tTab = MultiBot.talent.setGrid(MultiBot.talent.frames["Tab" .. i])
 		tTab.setTexture("Interface\\AddOns\\MultiBot\\Textures\\Talent_" .. tMarker .. ".blp")
 		tTab.value = 0
 		tTab.id = i
@@ -2762,18 +2782,18 @@ MultiBot.talent.doState = function()
 			
 			if(MultiBot.talent.points == 0) then
 				if(tTalent.value == 0) then
-					tTalent.setDisable()
+					tTalent.setDisable(false)
 					tValue:Hide()
 				else
-					tTalent.setEnable()
+					tTalent.setEnable(false)
 					tValue:Show()
 				end
 			else
 				if(tTab.value < tTalent.points) then
-					tTalent.setDisable()
+					tTalent.setDisable(false)
 					tValue:Hide()
 				else
-					tTalent.setEnable()
+					tTalent.setEnable(false)
 					tValue:Show()
 				end
 			end

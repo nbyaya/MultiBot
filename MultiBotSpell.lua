@@ -1,6 +1,13 @@
+MultiBot.getSpellID = function(pInfo)
+	local tInfo = MultiBot.doSplit(pInfo, "|")
+	if(string.sub(tInfo[3], 1, 6) == "Hspell") then return string.sub(tInfo[3], 8) end
+	return 0
+end
+
 MultiBot.addSpell = function(pInfo, pName)
 	local tInfo = MultiBot.doSplit(pInfo, "|")
-	local tID = MultiBot.doSplit(tInfo[3], ":")[2]
+	local tID = MultiBot.getSpellID(pInfo)
+	if(tID == 0) then return end
 	
 	local tName, tRank, tIcon = GetSpellInfo(tID)
 	local tLink = GetSpellLink(tID)
@@ -19,11 +26,11 @@ MultiBot.addSpell = function(pInfo, pName)
 	if(MultiBot.spells[pName][tID] == nil) then MultiBot.spells[pName][tID] = true end
 	
 	if(MultiBot.spellbook.index < 17) then
-		MultiBot.setSpell(MultiBot.spellbook.index, tSpell, MultiBot.spells[pName][tID])
+		MultiBot.setSpell(MultiBot.spellbook.index, tSpell, pName)
 	end
 end
 
-MultiBot.setSpell = function(pIndex, pSpell, pState)
+MultiBot.setSpell = function(pIndex, pSpell, pName)
 	local tIndex = MultiBot.IF(pIndex < 10, "0", "") .. pIndex
 	local tOverlay = MultiBot.spellbook.frames["Overlay"]
 	
@@ -39,7 +46,7 @@ MultiBot.setSpell = function(pIndex, pSpell, pState)
 		tOverlay.texts["T" .. tIndex]:Show()
 		tOverlay.texts["R" .. tIndex]:Show()
 		
-		tOverlay.buttons["C" .. tIndex]:SetChecked(pState)
+		tOverlay.buttons["C" .. tIndex]:SetChecked(MultiBot.spells[pName][pSpell[1]])
 		tOverlay.buttons["C" .. tIndex].doClick = function(pButton)
 			local tName = pButton.getName()
 			local tAction = ""

@@ -56,6 +56,35 @@ MultiBot.timer.invite = {}
 MultiBot.timer.invite.elapsed = 0
 MultiBot.timer.invite.interval = 5
 
+-- CLASSES --
+
+MultiBot.data.classes = {}
+MultiBot.data.classes.input = {
+[1] = "DeathKnight",
+[2] = "Druid",
+[3] = "Hunter",
+[4] = "Mage",
+[5] = "Paladin",
+[6] = "Priest",
+[7] = "Rogue",
+[8] = "Shaman",
+[9] = "Warlock",
+[10] = "Warrior"
+}
+
+MultiBot.data.classes.output = {
+[1] = "DeathKnight",
+[2] = "Druid",
+[3] = "Hunter",
+[4] = "Mage",
+[5] = "Paladin",
+[6] = "Priest",
+[7] = "Rogue",
+[8] = "Shaman",
+[9] = "Warlock",
+[10] = "Warrior"
+}
+
 -- INFO --
 
 MultiBot.info = {}
@@ -147,6 +176,9 @@ MultiBot.info.rights =
 MultiBot.info.reward =
 "Select the Rewards";
 
+MultiBot.info.nothing =
+"Nothing is saved in this Slot.";
+
 MultiBot.info.shorts.bag =
 "Bag";
 
@@ -203,7 +235,7 @@ MultiBot.info.talent.Hunter1 =
 "|cffffcc00Beast Mastery|r";
 
 MultiBot.info.talent.Hunter2 =
-"|cffffcc00Marksmenschip|r";
+"|cffffcc00Marksmanship|r";
 
 MultiBot.info.talent.Hunter3 =
 "|cffffcc00Survival|r";
@@ -248,7 +280,7 @@ MultiBot.info.talent.Shaman1 =
 "|cffffcc00Elemental|r";
 
 MultiBot.info.talent.Shaman2 =
-"|cffffcc00Enchanement|r";
+"|cffffcc00Enhancement|r";
 
 MultiBot.info.talent.Shaman3 =
 "|cffffcc00Restoration|r";
