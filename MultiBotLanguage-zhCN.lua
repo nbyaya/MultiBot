@@ -456,7 +456,7 @@ MultiBot.tips.format.master =
 "执行命令时显示命令的接收者。|r\n\n".. 
 "|cffff0000左键点击显示或隐藏选项|r\n".. 
 "|cff999999(执行命令: 系统)|r\n\n".. 
-"|cffff0000右键点击询问当前阵型|r\n".. 
+"|cffff0000右键点击查看当前阵型|r\n".. 
 "|cff999999(执行命令: 团队, 小队)|r";
 
 MultiBot.tips.format.arrow = 
@@ -880,7 +880,7 @@ MultiBot.tips.main.masters =
 "GM功能切换 \n|cffffffff"..
 "这个切换开关将启用或禁用GM控制功能。\n"..
 "你需要拥有GM权限才能启用GM控制功能|r\n\n"..
-"|cffff0000左键点击以启用或禁用GM控制功能|r\n"..
+"|cffff0000左键点击启用或禁用GM控制功能|r\n"..
 "|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.main.rtsc =
@@ -1003,7 +1003,7 @@ MultiBot.tips.game.portal =
 
 MultiBot.tips.game.memory =
 "记忆宝石\n|cffffffff"..
-"This Memory-Gem ABOUT.\n"..
+"这个记忆宝石用于存储位置信息。\n"..
 "您需要游戏管理员权限才能使用此按钮。|r\n\n"..
 "|cffff0000左键单击存储或传送到该位置|r\n"..
 "|cff999999(执行命令: 目标)|r\n\n"..
@@ -1243,7 +1243,7 @@ MultiBot.tips.itemus.rare.R05 =
 "传说品质 |cffffffff\n"..
 "显示传说品质的物品。|r\n\n"..
 "|cffff0000左键单击设置过滤器|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.rare.R06 =
 "神器品质 |cffffffff\n"..
@@ -1426,7 +1426,7 @@ MultiBot.tips.itemus.slot.S25 =
 "显示投掷物槽位的物品。|r\n"..
 "注意：此槽位与远程相同。|r\n\n"..
 "|cffff0000左键单击设置过滤器|r\n"..
-"|cff999999(Execution-Order: System)|r";
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.itemus.slot.S26 =
 "远程-右手槽位 |cffffffff\n"..
@@ -1487,7 +1487,7 @@ MultiBot.tips.deathknight.dps.master =
 "DPS控制|cffffffff\n"..
 "使用此控制单元可以设置通用的DPS策略。|r\n\n"..
 "|cffff0000左键点击显示或隐藏DPS控制|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.deathknight.dps.dpsAssist =
 "DPS辅助|cffffffff\n"..
@@ -1495,7 +1495,7 @@ MultiBot.tips.deathknight.dps.dpsAssist =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用DPS辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.deathknight.dps.dpsAoe =
 "DPS范围攻击|cffffffff\n"..
@@ -1503,7 +1503,7 @@ MultiBot.tips.deathknight.dps.dpsAoe =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用DPS范围攻击|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.deathknight.tankAssist =
 "坦克辅助|cffffffff\n"..
@@ -1511,7 +1511,7 @@ MultiBot.tips.deathknight.tankAssist =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用坦克辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 -- 德鲁伊 --
 
@@ -1521,31 +1521,31 @@ MultiBot.tips.druid.heal =
 "熊、猫、施法者和治疗是互斥的。\n"..
 "同一时间只能激活这些策略中的一个。|r\n\n"..
 "|cffff0000左键单击以启用或禁用治疗|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.druid.buff =
 "增益|cffffffff\n"..
 "它允许德鲁伊为团队施加增益效果。|r\n\n"..
 "|cffff0000左键单击以启用或禁用增益|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.druid.playbook.master =
 "策略手册|cffffffff\n"..
 "在策略手册中你会找到该职业典型的策略。|r\n\n"..
 "|cffff0000左键点击显示或隐藏策略手册|r\n"..
-"|cf9999999(执行命令: 系统)|r";
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.druid.playbook.casterDebuff =
 "施法者-减益|cffffffff\n"..
 "允许施法者在战斗中使用减益法术。|r\n\n"..
 "|cffff0000左键单击以启用或禁用施法者-减益|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.druid.playbook.casterAoe =
 "施法者-范围伤害|cffffffff\n"..
 "允许施法者在战斗中使用范围伤害法术。|r\n\n"..
 "|cffff0000左键单击以启用或禁用施法者-范围伤害|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.druid.playbook.caster =
 "施法者|cffffffff\n"..
@@ -1553,13 +1553,13 @@ MultiBot.tips.druid.playbook.caster =
 "熊、猫、施法者和治疗是互斥的。\n"..
 "同一时间只能激活这些策略中的一个。|r\n\n"..
 "|cffff0000左键单击以启用或禁用施法者|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.druid.playbook.catAoe =
 "猫-范围伤害|cffffffff\n"..
 "允许猫形态在战斗中使用范围伤害攻击。|r\n\n"..
 "|cffff0000左键单击以启用或禁用猫-范围伤害|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.druid.playbook.cat =
 "猫|cffffffff\n"..
@@ -1567,7 +1567,7 @@ MultiBot.tips.druid.playbook.cat =
 "熊、猫、施法者和治疗是互斥的。\n"..
 "同一时间只能激活这些策略中的一个。|r\n\n"..
 "|cffff0000左键单击以启用或禁用猫|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.druid.playbook.bear =
 "熊|cffffffff\n"..
@@ -1575,13 +1575,13 @@ MultiBot.tips.druid.playbook.bear =
 "熊、猫、施法者和治疗是互斥的。\n"..
 "同一时间只能激活这些策略中的一个。|r\n\n"..
 "|cffff0000左键单击以启用或禁用熊|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.druid.dps.master =
 "DPS控制|cffffffff\n"..
 "使用此控制单元可以设置通用的DPS策略。|r\n\n"..
 "|cffff0000左键点击显示或隐藏DPS控制|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.druid.dps.dpsAssist =
 "伤害输出辅助|cffffffff\n"..
@@ -1589,7 +1589,7 @@ MultiBot.tips.druid.dps.dpsAssist =
 "伤害输出范围攻击、伤害输出辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用伤害输出辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.druid.dps.dpsDebuff =
 "DPS减益|cffffffff\n"..
@@ -1598,7 +1598,7 @@ MultiBot.tips.druid.dps.dpsDebuff =
 "熊、猫、施法者和治疗是互斥的。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键单击以启用或禁用DPS减益|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.druid.dps.dpsAoe =
 "DPS范围攻击|cffffffff\n"..
@@ -1608,7 +1608,7 @@ MultiBot.tips.druid.dps.dpsAoe =
 "熊、猫、施法者和治疗是互斥的。\n"..
 "同一时间只能激活这些策略中的一个。|r\n\n"..
 "|cffff0000左键点击启用或禁用DPS范围攻击|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.druid.dps.dps = 
 "DPS|cffffffff\n"..
@@ -1618,7 +1618,7 @@ MultiBot.tips.druid.dps.dps =
 "熊、猫、施法者和治疗是互斥的。\n"..
 "同一时间只能激活这些策略中的一个。|r\n\n"..
 "|cffff0000左键单击以启用或禁用DPS策略|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.druid.tankAssist = 
 "坦克辅助|cffffffff\n"..
@@ -1626,7 +1626,7 @@ MultiBot.tips.druid.tankAssist =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一个。|r\n\n"..
 "|cffff0000左键单击以启用或禁用坦克辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.druid.tank = 
 "坦克|cffffffff\n"..
@@ -1635,7 +1635,7 @@ MultiBot.tips.druid.tank =
 "熊、猫、施法者和治疗是互斥的。\n"..
 "同一时间只能激活这些策略中的一个。|r\n\n"..
 "|cffff0000左键单击以启用或禁用坦克|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 -- 猎人 --
 
@@ -1707,7 +1707,7 @@ MultiBot.tips.hunter.dps.master =
 "DPS控制|cffffffff\n"..
 "使用此控制单元可以设置通用的DPS策略。|r\n\n"..
 "|cffff0000左键点击显示或隐藏DPS控制|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.hunter.dps.dpsAssist =
 "DPS辅助|cffffffff\n"..
@@ -1715,13 +1715,13 @@ MultiBot.tips.hunter.dps.dpsAssist =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用DPS辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.hunter.dps.dpsDebuff =
 "DPS减益|cffffffff\n"..
 "启用DPS减益策略。\n"..
 "|cffff0000左键单击以启用或禁用DPS减益|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.hunter.dps.dpsAoe =
 "DPS范围攻击|cffffffff\n"..
@@ -1729,13 +1729,13 @@ MultiBot.tips.hunter.dps.dpsAoe =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一个。|r\n\n"..
 "|cffff0000左键点击启用或禁用DPS范围攻击|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.hunter.dps.dps =
 "DPS|cffffffff\n"..
 "启用DPS策略。\n"..
 "|cffff0000左键单击以启用或禁用DPS策略|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.hunter.tankAssist =
 "坦克辅助|cffffffff\n"..
@@ -1743,7 +1743,7 @@ MultiBot.tips.hunter.tankAssist =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一个。|r\n\n"..
 "|cffff0000左键单击以启用或禁用坦克辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 -- 法师 --
 
@@ -1771,13 +1771,13 @@ MultiBot.tips.mage.playbook.master =
 "策略手册|cffffffff\n"..
 "在策略手册中你会找到该职业典型的策略。|r\n\n"..
 "|cffff0000左键点击显示或隐藏策略手册|r\n"..
-"|cf9999999(执行命令: 系统)|r";
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.mage.playbook.arcaneAoe =
 "奥术范围攻击|cffffffff\n"..
 "允许法师在战斗中使用奥术范围攻击法术。|r\n\n"..
 "|cffff0000左键点击启用或禁用奥术范围攻击|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.mage.playbook.arcane =
 "奥术魔法|cffffffff\n"..
@@ -1785,13 +1785,13 @@ MultiBot.tips.mage.playbook.arcane =
 "奥术、冰霜和火焰魔法相互排斥。\n"..
 "只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用奥术魔法|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.mage.playbook.frostAoe =
 "冰霜范围攻击|cffffffff\n"..
 "允许法师在战斗中使用冰霜范围攻击法术。|r\n\n"..
 "|cffff0000左键点击启用或禁用奥术范围攻击|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.mage.playbook.frost =
 "冰霜魔法|cffffffff\n"..
@@ -1799,13 +1799,13 @@ MultiBot.tips.mage.playbook.frost =
 "奥术、冰霜和火焰魔法相互排斥。\n"..
 "只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用冰霜魔法|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.mage.playbook.fireAoe =
 "火焰范围攻击|cffffffff\n"..
 "允许法师在战斗中使用火焰范围攻击法术。|r\n\n"..
 "|cffff0000左键点击启用或禁用火焰范围攻击|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.mage.playbook.fire =
 "火焰魔法|cffffffff\n"..
@@ -1813,13 +1813,13 @@ MultiBot.tips.mage.playbook.fire =
 "奥术、冰霜和火焰魔法相互排斥。\n"..
 "只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用火焰魔法|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.mage.dps.master =
 "DPS控制|cffffffff\n"..
 "使用此控制单元可以设置通用的DPS策略。|r\n\n"..
 "|cffff0000左键点击显示或隐藏DPS控制|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.mage.dps.dpsAssist =
 "DPS辅助|cffffffff\n"..
@@ -1827,7 +1827,7 @@ MultiBot.tips.mage.dps.dpsAssist =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用DPS辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.mage.dps.dpsAoe =
 "DPS范围攻击|cffffffff\n"..
@@ -1835,7 +1835,7 @@ MultiBot.tips.mage.dps.dpsAoe =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用DPS范围攻击|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.mage.tankAssist =
 "坦克辅助|cffffffff\n"..
@@ -1843,7 +1843,7 @@ MultiBot.tips.mage.tankAssist =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用坦克辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 -- 圣骑士 --
 
@@ -1853,7 +1853,7 @@ MultiBot.tips.paladin.heal =
 "坦克、伤害输出和治疗相互排斥。\n"..
 "只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用治疗|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.seal.master =
 "圣印控制|cffffffff\n"..
@@ -1991,7 +1991,7 @@ MultiBot.tips.paladin.dps.master =
 "DPS控制|cffffffff\n"..
 "使用此控制单元可以设置通用的DPS策略。|r\n\n"..
 "|cffff0000左键点击显示或隐藏DPS控制|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.dps.dpsAssist =
 "DPS辅助|cffffffff\n"..
@@ -1999,7 +1999,7 @@ MultiBot.tips.paladin.dps.dpsAssist =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用DPS辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.dps.dpsAoe = 
 "DPS范围攻击|cffffffff\n"..
@@ -2007,7 +2007,7 @@ MultiBot.tips.paladin.dps.dpsAoe =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用DPS范围攻击|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.dps.dps = 
 "DPS|cffffffff\n"..
@@ -2015,7 +2015,7 @@ MultiBot.tips.paladin.dps.dps =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一个。|r\n\n"..
 "|cffff0000左键单击以启用或禁用DPS策略|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.tankAssist = 
 "坦克辅助|cffffffff\n"..
@@ -2023,7 +2023,7 @@ MultiBot.tips.paladin.tankAssist =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一个。|r\n\n"..
 "|cffff0000左键单击以启用或禁用坦克辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.paladin.tank = 
 "坦克|cffffffff\n"..
@@ -2031,7 +2031,7 @@ MultiBot.tips.paladin.tank =
 "坦克、DPS和治疗相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用坦克辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 -- 牧师 --
 
@@ -2041,31 +2041,31 @@ MultiBot.tips.priest.heal =
 "暗影和治疗相互排斥。\n"..
 "只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用治疗|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.priest.buff =
 "增益|cffffffff\n"..
 "它允许牧师为团队施加增益。|r\n\n"..
 "|cffff0000左键点击启用或禁用增益|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.priest.playbook.master =
 "策略手册|cffffffff\n"..
 "在策略手册中你会找到该职业典型的策略。|r\n\n"..
 "|cffff0000左键点击显示或隐藏策略手册|r\n"..
-"|cf9999999(执行命令: 系统)|r";
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.priest.playbook.shadowDebuff =
 "暗影减益|cffffffff\n"..
 "允许牧师在战斗中使用暗影减益法术。|r\n\n"..
 "|cffff0000左键点击启用或禁用暗影减益|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.priest.playbook.shadowAoe =
 "暗影范围攻击|cffffffff\n"..
 "允许牧师在战斗中使用暗影范围攻击法术。|r\n\n"..
 "|cffff0000左键点击启用或禁用暗影范围攻击减益|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.priest.playbook.shadow =
 "暗影|cffffffff\n"..
@@ -2073,13 +2073,13 @@ MultiBot.tips.priest.playbook.shadow =
 "暗影和治疗相互排斥。\n"..
 "只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用暗影|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.priest.dps.master =
 "DPS控制|cffffffff\n"..
 "使用此控制单元可以设置通用的DPS策略。|r\n\n"..
 "|cffff0000左键点击显示或隐藏DPS控制|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.priest.dps.dpsAssist =
 "DPS辅助|cffffffff\n"..
@@ -2087,13 +2087,13 @@ MultiBot.tips.priest.dps.dpsAssist =
 "DPS范围攻击、DPS辅助('治疗者输出')和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用DPS辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.priest.dps.dpsDebuff =
 "DPS减益|cffffffff\n"..
 "启用DPS减益策略。\n"..
 "|cffff0000左键单击以启用或禁用DPS减益|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.priest.dps.dpsAoe = 
 "DPS范围攻击|cffffffff\n"..
@@ -2101,13 +2101,13 @@ MultiBot.tips.priest.dps.dpsAoe =
 "DPS范围攻击、DPS辅助('治疗者输出')和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用DPS范围攻击|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.priest.dps.dps = 
 "DPS|cffffffff\n"..
 "启用DPS策略。\n"..
 "|cffff0000左键单击以启用或禁用DPS策略|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.priest.tankAssist = 
 "坦克辅助|cffffffff\n"..
@@ -2115,7 +2115,7 @@ MultiBot.tips.priest.tankAssist =
 "DPS范围攻击、DPS辅助('治疗者输出')和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一个。|r\n\n"..
 "|cffff0000左键单击以启用或禁用坦克辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 -- 潜行者 --
 
@@ -2123,7 +2123,7 @@ MultiBot.tips.rogue.dps.master =
 "DPS控制|cffffffff\n"..
 "在DPS控制中，您可以找到通用的DPS策略。|r\n\n"..
 "|cffff0000左键单击以显示或隐藏DPS控制|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.rogue.dps.dpsAssist =
 "DPS辅助|cffffffff\n"..
@@ -2131,7 +2131,7 @@ MultiBot.tips.rogue.dps.dpsAssist =
 "DPS-AOE、DPS辅助和坦克辅助是互斥的。\n"..
 "只能激活这些策略中的一个。|r\n\n"..
 "|cffff0000左键单击以启用或禁用DPS辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.rogue.dps.dpsAoe = 
 "DPS范围攻击|cffffffff\n"..
@@ -2139,13 +2139,13 @@ MultiBot.tips.rogue.dps.dpsAoe =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一个。|r\n\n"..
 "|cffff0000左键点击启用或禁用DPS范围攻击|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.rogue.dps.dps = 
 "DPS|cffffffff\n"..
 "启用DPS策略。|r\n\n"..
 "|cffff0000左键单击以启用或禁用DPS|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.rogue.tankAssist = 
 "坦克辅助|cffffffff\n"..
@@ -2153,7 +2153,7 @@ MultiBot.tips.rogue.tankAssist =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "只能激活这些策略中的一个。|r\n\n"..
 "|cffff0000左键单击以启用或禁用坦克辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 -- 萨满 --
 
@@ -2163,7 +2163,7 @@ MultiBot.tips.shaman.heal =
 "施法者、近战和治疗相互排斥。\n"..
 "只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用治疗|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.ntotem.master =
 "非战斗图腾|cffffffff\n"..
@@ -2209,19 +2209,19 @@ MultiBot.tips.shaman.playbook.master =
 "策略手册|cffffffff\n"..
 "在策略手册中你会找到该职业典型的策略。|r\n\n"..
 "|cffff0000左键点击显示或隐藏策略手册|r\n"..
-"|cf9999999(执行命令: 系统)|r";
+"|cff999999(执行命令: 系统)|r";
 
 MultiBot.tips.shaman.playbook.totems =
 "图腾|cffffffff\n"..
 "允许萨满在战斗中使用图腾。|r\n\n"..
 "|cffff0000左键点击启用或禁用图腾|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.playbook.casterAoe =
 "施法者范围攻击|cffffffff\n"..
 "允许萨满在战斗中使用范围攻击法术。|r\n\n"..
 "|cffff0000左键点击启用或禁用施法者范围攻击|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.playbook.caster =
 "施法者|cffffffff\n"..
@@ -2229,13 +2229,13 @@ MultiBot.tips.shaman.playbook.caster =
 "施法者、近战和治疗相互排斥。\n"..
 "只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用施法者|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.playbook.meleeAoe =
 "近战范围攻击|cffffffff\n"..
 "允许萨满在战斗中使用近战范围攻击。|r\n\n"..
 "|cffff0000左键点击启用或禁用近战范围攻击|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.playbook.melee =
 "近战|cffffffff\n"..
@@ -2243,13 +2243,13 @@ MultiBot.tips.shaman.playbook.melee =
 "施法者、近战和治疗相互排斥。\n"..
 "只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用近战攻击|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.dps.master =
 "DPS控制|cffffffff\n"..
 "使用此控制单元可以设置通用的DPS策略。|r\n\n"..
 "|cffff0000左键点击显示或隐藏DPS控制|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.dps.dpsAssist =
 "DPS辅助|cffffffff\n"..
@@ -2257,7 +2257,7 @@ MultiBot.tips.shaman.dps.dpsAssist =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用DPS辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.dps.dpsAoe = 
 "DPS范围攻击|cffffffff\n"..
@@ -2265,7 +2265,7 @@ MultiBot.tips.shaman.dps.dpsAoe =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用DPS范围攻击|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.shaman.tankAssist = 
 "坦克辅助|cffffffff\n"..
@@ -2273,7 +2273,7 @@ MultiBot.tips.shaman.tankAssist =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用坦克辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 -- 术士 --
 
@@ -2307,7 +2307,7 @@ MultiBot.tips.warlock.dps.master =
 "DPS控制|cffffffff\n"..
 "使用此控制单元可以设置通用的DPS策略。|r\n\n"..
 "|cffff0000左键点击显示或隐藏DPS控制|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.warlock.dps.dpsAssist =
 "DPS辅助|cffffffff\n"..
@@ -2315,13 +2315,13 @@ MultiBot.tips.warlock.dps.dpsAssist =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用DPS辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.warlock.dps.dpsDebuff =
 "DPS减益|cffffffff\n"..
 "启用DPS减益。\n"..
 "|cffff0000左键单击以启用或禁用DPS减益|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.warlock.dps.dpsAoe = 
 "DPS范围攻击|cffffffff\n"..
@@ -2329,7 +2329,7 @@ MultiBot.tips.warlock.dps.dpsAoe =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用DPS范围攻击|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.warlock.dps.dps = 
 "DPS|cffffffff\n"..
@@ -2337,7 +2337,7 @@ MultiBot.tips.warlock.dps.dps =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一个。|r\n\n"..
 "|cffff0000左键单击以启用或禁用DPS策略|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.warlock.tankAssist = 
 "坦克辅助|cffffffff\n"..
@@ -2345,7 +2345,7 @@ MultiBot.tips.warlock.tankAssist =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一个。|r\n\n"..
 "|cffff0000左键单击以启用或禁用坦克辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.warlock.tank = 
 "坦克|cffffffff\n"..
@@ -2353,7 +2353,7 @@ MultiBot.tips.warlock.tank =
 "坦克、DPS和治疗相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用坦克辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 -- 战士 --
 
@@ -2361,7 +2361,7 @@ MultiBot.tips.warrior.dps.master =
 "DPS控制|cffffffff\n"..
 "使用此控制单元可以设置通用的DPS策略。|r\n\n"..
 "|cffff0000左键点击显示或隐藏DPS控制|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.warrior.dps.dpsAssist =
 "DPS辅助|cffffffff\n"..
@@ -2369,7 +2369,7 @@ MultiBot.tips.warrior.dps.dpsAssist =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用DPS辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.warrior.dps.dpsAoe = 
 "DPS范围攻击|cffffffff\n"..
@@ -2377,7 +2377,7 @@ MultiBot.tips.warrior.dps.dpsAoe =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用DPS范围攻击|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.warrior.tankAssist = 
 "坦克辅助|cffffffff\n"..
@@ -2385,13 +2385,13 @@ MultiBot.tips.warrior.tankAssist =
 "DPS范围攻击、DPS辅助和坦克辅助相互排斥。\n"..
 "同一时间只能激活这些策略中的一种。|r\n\n"..
 "|cffff0000左键点击启用或禁用坦克辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cff999999(执行命令: 机器人)|r";
 
 MultiBot.tips.warrior.tank = 
 "坦克|cffffffff\n"..
 "启用坦克策略。\n"..
-"|cffff0000左键点击启用或禁用坦克辅助|r\n"..
-"|cf9999999(执行命令: 机器人)|r";
+"|cffff0000左键点击启用或禁用坦克|r\n"..
+"|cff999999(执行命令: 机器人)|r";
 
 -- 所有的 --
 
